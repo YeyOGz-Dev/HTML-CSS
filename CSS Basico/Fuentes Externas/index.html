@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BASICO - Fuentes Externas</title>
+    <link rel="shortcut icon" href="img/CSS.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1>Fuentes Externas</h1>
+    <p>Para esta clase se creó una carpeta llamada "fonts" y ahi estara la fuente de ejemplo</p>
+    <p>Para las fuentes externas se pueden agregar de dos maneras diferentes (por el momento):</p>
+    <ul>
+        <li class="link_head">Una de las maneras es copiando el 'link' de la fuente desde un servicio web de fuentes
+            como Google Fonts, Adobe Fonts etc. y pegandolo en el "head" del proyecto (en el index.html > head)
+            <br>*MIRAR EL HEAD EN EL CODIGO*<br>
+            <p>
+                De esta manera se puede hacer y no esta mal, lo que pasa es que si depronto el servidor de la fuente se
+                cae, o el usuario que entre a nuestra pagina tenga mal internet puede que la fuente no cargue y carga la
+                fuente por defecto del navegador
+            </p>
+        </li>
+        <li class="fuente_en_archivo">De esta otra manera, hay que descargar la fuente y añadir los archivos de la
+            fuente en una carpeta llamada fonts. Luego de tener ya todo organizado en la carpeta, iremos al archivo .css
+            y vamos a crear la siguiente estructura: <br> <br> @font-face{ <br> font-family: "Nombre de la fuente";
+            <br>src:url("url de la fuente"); format(truetype) } Se le debe asignar el valor format("formato de la
+            fuente") para que al abrir el navegador cargue mas rapido la fuente. <br> Ver mas detalladamente los
+            (font-face) en el archivo .css .
+            <p>De esta forma podemos configurar cada opcion que nos ofrece la fuente, ya que podemos usar varias veces
+                la misma estructura y darle un grosor, tamaño o estilos diferentes. por ejemplo:</p>
+            <ul>
+                <li class="font-face-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore accusantium
+                    voluptatum voluptatem et excepturi saepe dolorem! Sequi blanditiis fugit quam aliquam. Molestias ea
+                    architecto veniam nemo reprehenderit itaque assumenda culpa.</li>
+                <li class="font-face-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim fuga magnam at
+                    cupiditate corporis aspernatur, velit asperiores ratione! Amet vitae optio corporis reiciendis nisi
+                    perferendis fugiat illo repudiandae reprehenderit iure?</li>
+                <li class="font-face-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. In odio porro modi
+                    ratione dolorem possimus amet adipisci doloremque dignissimos asperiores sed eaque iusto
+                    consectetur, vel, voluptas aliquid suscipit eius numquam.</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

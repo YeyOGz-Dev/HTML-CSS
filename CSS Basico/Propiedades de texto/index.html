@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repasando CSS - Propiedades de texto</title>
+    <link rel="shortcut icon" href="img/CSS.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <h1 class="text-align">Propiedades de texto</h1>
+    <ul>
+        <li class="color">"color" sirve para darle el color al texto</li>
+        <li class="font-family">"font-family" sirve para darle una tipografia (fuente) al texto</li>
+        <li class="font-size">"font-size" Sirve para darle tamaño al texto, por el momento solo veremos px (pixeles.) ya que hay mas unidades de medida.</li>
+        <li class="font-weigth">"font-weigth" Define el grosor del texto entre 100 y 900 donde 100 es delgado y 900 es
+            grueso. O se pueden usar las palabras clave:
+            <ul>
+                <li class="font-weigth-normal">normal: Es el valor por defecto, equivale a 400.</li>
+                <li class="font-weigth-bold">bold: Equivale a 700.</li>
+                <li class="font-weigth-bolder">bolder: Equivale al valor mas grueso que tenga la fuente.</li>
+                <li class="font-weigth-lighter">lighter: Equivale al valor mas delgado que tenga la fuente.</li>
+            </ul>
+        </li>
+
+        <li class="font-style">"font-style" Sirve para poner la letra "cursiva", Por defecto esta en normal. Para no complicarse solo usar "italic".
+        </li>
+
+        <li class="text-align">"text-align" Se utiliza para controlar l aalineacion horizontal del texto dentro de su contenedor. Valores del text-align:
+            <ul>
+                <li class="text-align-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptates.</li>
+                <li class="text-align-right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, autem!</li>
+                <li class="text-align-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, autem!</li>
+                <li class="text-align-justify">En este caso no se ha de notar ya que el texto es corto, pero basicamente alinea el texto a los bordes del contenedor</li>
+                <li class="text-align-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, autem!</li>
+                <li class="text-align-end">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, autem!</li>
+            </ul>
+        </li>
+        
+        
+        <!-- El h1 principal tiene aplicado este estilo. -->
+        <li class="text-decoration">"text-decoration" Sirve para subrayar el texto, valores del text-decoration:
+            <ul>
+                <li class="text-decoration-none">none: Valor por defecto, aunque por ejemplo la etiqueta 'a' que es un <a class="text-decoration-none" href="">link</a> viene subrayado, si le aplicamos el none a esa etiqueta le quitamos la linea con la que viene esa etiqueta por defecto.</li>
+                <li class="text-decoration-underline">underline: Esta subraya el texto por debajo.</li>
+                <li class="text-decoration-overline">overline: Esta subraya el texto por encima.</li>
+                <li class="text-decoration-line-through">line-through: Esta subraya el texto en medio</li>
+                <p>Se le pueden cambiar los estilos por defecto con los que viene el "subrayado" de la siguiente manera:</p>
+                <ul>
+                    <li class="text-decoration-color">color: Para cambiarle el color al subrayado</li>
+                    <li class="text-decoration-style">style: Para cambiarle el estilo al subrayado.</li>
+                </ul>
+            </ul>
+        </li>
+        <li class="line-height">"line-height" Controla la altura de una linea de texto, por defecto esta en 1 (100% - normal) si por ejemplo le ponemos 3.5 seria (350% - alto). en resumen, es la separacion entre lineas verticalmente para que el texto sea mas "legible". Si se le ponen valores menores a 1, sera muy poco legible.
+        </li>
+        <li class="letter-spacing">"letter-spacing" Ajusta el espacio entre las letras del texto.</li>
+        <li class="word-spacing">"word-spacing" Ajusta el espacio entre las palabras del texto.</li>
+        <li class="text-transform">"text-transform" Permite convertir el texto a mayúsculas, minúsculas o solo la primera letra de cada palabra en mayúscula. Valores del text-transform:
+            <ul>
+                <li class="text-transform-uppercase">uppercase: Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, eius!</li>
+                <li class="text-transform-lowercase">lowercase: Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, eius!</li>
+                <li class="text-transform-capitalize">capitalize: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, id.</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

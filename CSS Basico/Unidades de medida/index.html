@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BASICO - Unidades de medida</title>
+    <link rel="shortcut icon" href="img/CSS.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <h1>Unidades de medida</h1>
+    <p>las unidades de medida son esenciales para definir dimensiones, márgenes, paddings y otras propiedades de los elementos. Existen dos tipos principales de unidades: absolutas y relativas. lo mas recomendable es usar las relativas ya que son mas adaptables.</p>
+
+    <h2>Unidades de medida ABSOLUTAS</h2>
+    <ul>
+        <li class="absolutas px">Pixeles (px): La unidad más común, equivalente a un punto en la pantalla. Son unidades fijas e independientes del tamaño de la fuente o del dispositivo.
+        Algunos de sus usos son para el posicionamiento de elementos, tamaño de imagenes, bordes, etc.
+        </li>
+        <li>Centimetros, milimetros y pulgadas (cm, mm, in): Son unidades absolutas pero no se usan casi.</li>
+        <li>Puntos y picas (pt, pc): No se utilizan casi.</li>
+    </ul>
+
+    <h2>Unidades de medida RELATTIVAS</h2>
+    <li>em: Equivalente al tamaño de la fuente actual del elemento. Permite crear diseños adaptables al tamaño de la fuente. Se usa mas que todo para los titulos, parrafos y/o menus.</li>
+    <li>rem: esta medida es muy similar al em, pero se basa en el tamaño de la fuente del elemento raiz (html). Ideal para diseños adaptables a diferentes dispositivos. Esta es la opcion que personalmente me gusta mas, ya que es muy facil de aplicar y se puede entender facilmente. <br> En la hoja de estilos, debemos de asignarle a la etiqueta 'html' un font-size de 62.5% para que por defecto se entienda que seran 10px, y luego le asignamos el font-size al body con el valor de 1.6rem (esto significa 16px) y por ejemplo para un parrafo que queremos que tenga 30px simplemente le asignamos 3rem (Muestra real en el css.)</li>
+    <li>Vw (viewport width): representa el ancho del area visible del navegador</li>
+    <li>Vh (viewport height): Representa la altura del area visible del navegador.</li>
+    <li>Vmin: Es el valor menor entre vw y vh.</li>
+    <li>Vmax: Es el valor mayor entre vw y vh.</li>
+    
+    <h3>Consejos para elegir la unidad de medida adecuada:</h3>
+    <ul>
+        <li><b>Para diseños fijos:</b>Se usan unidades absolutas (px)</li>
+        <li><b>Para diseños adaptables al tamaño de la fuente:</b>em o rem</li>
+        <li><b>Para diseños adaptables a diferentes dispositivos:</b>vw, vh,  vmin, vmax</li>
+    </ul>
+</body>
+
+</html>

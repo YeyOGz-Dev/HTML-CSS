@@ -1,0 +1,25 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: "proxima nova";
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.details{
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.details li{
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+

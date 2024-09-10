@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="../img/HTML.png" type="image/png">
+</head>
+
+<body>
+    <h1>Tablas</h1>
+    <p>Las tablas en HTML se utilizan para organizar datos en filas y columnas. Son una herramienta fundamental para
+        estructurar información de forma clara y legible.</p>
+
+    <h2>Estructura de las tablas:</h2>
+    <ul>
+        <li>table: Etiqueta para crear tablas.</li>
+        <li>thead: Encabezado de la tabla</li>
+        <li>tbody: Cuerpo de la tabla</li>
+        <li>tfoot: Pie de la tabla. Por ejemplo el total.</li>
+        <li>th (table head): Define el encabezado de una fila </li>
+        <li>tr (table row): Define una fila de la tabla</li>
+        <li>td (table data): Define el dato dentro de una fila</li>
+    </ul>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="title">Cursos de Programación</th>
+            </tr>
+            <tr>
+                <th>Curso</th>
+                <th>Horas</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>5</td>
+                <td>$ 50.000</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>15</td>
+                <td>$ 20.000</td>
+            </tr>
+            <tr>
+                <td>Java Script</td>
+                <td>50</td>
+                <td>$ 100.000</td>
+            </tr>
+        </tbody>
+        <tfoot class="tfoot">
+            <th class="total_foot">Total</th>
+            <td class="dato_foot">70</td>
+            <td class="dato_foot">$ 170.000</td>
+        </tfoot>
+    </table>
+</body>
+
+</html>

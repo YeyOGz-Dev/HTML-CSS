@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces - Avanzado</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="../img/HTML.png" type="image/png">
+</head>
+
+<body>
+    <h1 id="titulo">Enlaces Avanzado</h1>
+    <!-- 
+        ? Etiqueta "a" de enlaces: Para movernos entre la misma pagina debemos de asignarle un id al elemento al que quisieramos ir y crearle  un enlace al otro elemento con el mismo id pero seleccionandolo con "#" por ejemplo: id="elemento1" / a href="#elemento1" 
+     -->
+    <ul>
+        <li>alternate: Indica que el documento enlazado es una versión alternativa del documento actual en otro idioma o
+            formato.</li>
+        <li>author: Indica que el documento enlazado es la página web del autor del documento actual.</li>
+        <li>bookmark: Indica que el documento enlazado es un marcador a una sección específica del documento actual.
+        </li>
+        <li>canonical: Indica que el documento enlazado es la versión principal del documento actual.</li>
+        <li>help: Indica que el documento enlazado contiene información de ayuda sobre el documento actual.</li>
+        <li>license: Indica que el documento enlazado contiene la licencia del software o contenido del documento
+            actual.</li>
+        <li>next: Indica que el documento enlazado es la siguiente página en una secuencia de páginas.</li>
+        <li>nofollow: Indica que el navegador no debe seguir el enlace y no debe pasar PageRank al documento enlazado.
+        </li>
+        <li>noopener: Indica que el documento enlazado debe abrirse en una nueva ventana o pestaña sin compartir las
+            cookies del documento actual.</li>
+        <li>noreferrer: Indica que el documento enlazado no debe tener acceso al encabezado Referer del documento
+            actual.</li>
+        <li>prev: Indica que el documento enlazado es la página anterior en una secuencia de páginas.</li>
+        <li>stylesheet: Indica que el documento enlazado es una hoja de estilos que se aplica al documento actual.</li>
+        
+        <li>tag: Indica que el documento enlazado es una página que contiene información sobre una palabra clave o tema
+            específico.</li>
+    </ul>
+    <!-- ! LOS LINKS QUE SEAN EXTERNOS SE DEBEN MANEJAR DE LA SIGUIENTE MANERA POR SEGURIDAD. -->
+    <a href="https://Youtube.com" target="_blank" rel="nofollow noopener noreferrer">Ir a Youtube</a>
+    <a href="#container1">Ir al contenedor #1</a>
+    <a href="#container2">Ir al contenedor #2</a>
+    <a href="#container3">Ir al contenedor #3</a>
+    <a href="#container4">Ir al contenedor #4</a>
+    <a href="#container5">Ir al contenedor #5</a>
+
+    <!-- ?Mailto: Para enviar un correo al que asignemos. -->
+    <a href="mailto:yeisongil.a9701@gmail.com">Enviar correo </a>
+    
+    <div id="container1" class="container1">
+        <h2>Contenedor 1</h2>
+        <ol>
+            <li>Ingredientes 1</li>
+            <li>Ingredientes 2</li>
+            <li>Ingredientes 3</li>
+            <li>Ingredientes 4</li>
+            <li>Ingredientes 5</li>
+        </ol>
+    </div>
+    <a href="#container1">Ir al contenedor #1</a>
+    <a href="#container2">Ir al contenedor #2</a>
+    <a href="#container3">Ir al contenedor #3</a>
+    <a href="#container4">Ir al contenedor #4</a>
+    <a href="#container5">Ir al contenedor #5</a>
+    <div id="container2" class="container2">
+        <h2>Contenedor 2</h2>
+        <ol>
+            <li>Ingredientes 1</li>
+            <li>Ingredientes 2</li>
+            <li>Ingredientes 3</li>
+            <li>Ingredientes 4</li>
+            <li>Ingredientes 5</li>
+        </ol>
+    </div>
+    <a href="#container1">Ir al contenedor #1</a>
+    <a href="#container2">Ir al contenedor #2</a>
+    <a href="#container3">Ir al contenedor #3</a>
+    <a href="#container4">Ir al contenedor #4</a>
+    <a href="#container5">Ir al contenedor #5</a>
+    <div id="container3" class="container3">
+        <h2>Contenedor 3</h2>
+        <ol>
+            <li>Ingredientes 1</li>
+            <li>Ingredientes 2</li>
+            <li>Ingredientes 3</li>
+            <li>Ingredientes 4</li>
+            <li>Ingredientes 5</li>
+        </ol>
+    </div>
+    <a href="#container1">Ir al contenedor #1</a>
+    <a href="#container2">Ir al contenedor #2</a>
+    <a href="#container3">Ir al contenedor #3</a>
+    <a href="#container4">Ir al contenedor #4</a>
+    <a href="#container5">Ir al contenedor #5</a>
+    <div id="container4" class="container4">
+        <h2>Contenedor 4</h2>
+        <ol>
+            <li>Ingredientes 1</li>
+            <li>Ingredientes 2</li>
+            <li>Ingredientes 3</li>
+            <li>Ingredientes 4</li>
+            <li>Ingredientes 5</li>
+        </ol>
+    </div>
+    <a href="#container1">Ir al contenedor #1</a>
+    <a href="#container2">Ir al contenedor #2</a>
+    <a href="#container3">Ir al contenedor #3</a>
+    <a href="#container4">Ir al contenedor #4</a>
+    <a href="#container5">Ir al contenedor #5</a>
+    <div id="container5" class="container5">
+        <h2>Contenedor 5</h2>
+        <ol>
+            <li>Ingredientes 1</li>
+            <li>Ingredientes 2</li>
+            <li>Ingredientes 3</li>
+            <li>Ingredientes 4</li>
+            <li>Ingredientes 5</li>
+        </ol>
+    </div>
+
+    <a href="#titulo">Ver el titulo</a>
+    <a download="../img/HTML.png" href="">Descargar Imagen de HTML</a>
+</body>
+
+</html>

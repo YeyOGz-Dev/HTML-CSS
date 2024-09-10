@@ -1,0 +1,11 @@
+.ingrediente_faltante{
+    color: #ff0000;
+}
+
+#ingrediente_secreto{
+    color: #0000FF;
+}
+
+p{
+    color: azure;
+}

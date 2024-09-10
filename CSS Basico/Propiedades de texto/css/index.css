@@ -1,0 +1,109 @@
+body {
+    font-size: 20px;
+}
+
+li {
+    margin: 20px 0;
+}
+
+.color {
+    color: blue;
+}
+
+.font-family {
+    font-family: 'Cascadia Code PL';
+}
+
+.font-size {
+    font-size: 20px;
+}
+
+.font-weigth-bold {
+    font-weight: bold;
+}
+
+.font-weigth-bolder {
+    font-weight: bolder;
+}
+
+.font-weigth-lighter {
+    font-weight: lighter;
+    font-family: 'Courier New';
+    /* Se le agrego el font-family para demostrar su funcion */
+}
+
+.font-style {
+    font-style: italic;
+    font-family: 'Cascadia Code PL';
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+.text-align-start {
+    text-align: start;
+}
+
+.text-align-end {
+    text-align: end;
+}
+
+.text-decoration-none{
+    text-decoration: none;
+}
+
+.text-decoration-underline{
+    text-decoration: underline;
+}
+.text-decoration-overline{
+    text-decoration: overline;
+}
+.text-decoration-line-through{
+    text-decoration: line-through;
+}
+.text-decoration-color{
+    text-decoration: line-through;
+    text-decoration-color: crimson;
+}
+.text-decoration-style{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: rgb(0, 236, 32);
+}
+
+.line-height{
+    line-height: 3.5;
+}
+
+.letter-spacing{
+    letter-spacing: 5px;
+}
+
+.word-spacing{
+    word-spacing: 10px;
+}
+
+.text-transform-uppercase{
+    text-transform: uppercase;
+}
+
+.text-transform-lowercase{
+    text-transform: lowercase;
+}
+
+.text-transform-capitalize{
+    text-transform: capitalize;
+}

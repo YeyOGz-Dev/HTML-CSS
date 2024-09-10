@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repasando HTML BASICO</title>
+    <link rel="shortcut icon" href="/img/HTML.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- ?--------------------------------------------------------------------------------------------------------------------------- -->
+    <h1>¿Que es HTML?</h1>
+    <p>Hypertext Markup Language (Lenguaje de marcado de hipertexto) Estructura (Esqueleto) de toda la pagina web.</p>
+    <!-- ?--------------------------------------------------------------------------------------------------------------------------- -->
+
+    <h2>¿Que es el SEO?</h2>
+    <p>El SEO (Search engine optimization - Optimizacion para motores de busqueda) Es el conjunto de tecnicas y
+        estrategias que se aplican a una página web para mejorar su posicionamiento organico en los resultados de
+        busqueda en los navegadores. El objetivo principal del SEO es lograr que la página web aparezca entre los
+        primeros resultados cuando los usuarios realicen busquedas relacionadas con la tematica de la pagina web. En
+        conclusion , el SEO es una estrategia fundamental para cualquier pagina que quiera darse a conocer.
+    </p>
+    <!-- ?--------------------------------------------------------------------------------------------------------------------------- -->
+
+    <h2>¿Que es HTTPS?</h2>
+    <p>HyperText Transfer Protocol Secure (Protocolo seguro de transferencia de hipertexto) </p>
+    <!-- ?--------------------------------------------------------------------------------------------------------------------------- -->
+
+    <h2>Parrafos (p)</h3>
+    <p>Esto es un parrafo, sirve para darle descripcion a un tema en especifico</p>
+    <!-- ?--------------------------------------------------------------------------------------------------------------------------- -->
+
+    <h2>Encabezados (h1-h6)</h2>
+    <p>Hay 6 tipos de encabezados, desde el h1 al h6. Solo se debe usar un 'h1' por pagina ya que esto ayuda al SEO. de
+        resto se pueden poner de la h2 a h6 las que sean necesarias.</p>
+    <!-- ?--------------------------------------------------------------------------------------------------------------------------- -->
+
+    <h2>Listas (ol-ul > li)</h2>
+    <p>Existen dos tipos de listas, Listas ordenadas (ol - muestra enumeración) y Listas desordenadas (ul - Muestra en viñetas). Luego de crear la lista se necesitan los Items de la lista, estos se hacen con la etiqueta (li - list item) Por ejemplo:</p>
+
+        <p>Las listas ordenadas sirven para enumerar pasos a seguir</p>
+    <ol>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ol>
+    <ul>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+    <p>Las listas desordenadas sirven como por ejemplo mostrar una lista para compras</p>
+    <!-- ?--------------------------------------------------------------------------------------------------------------------------- -->
+
+    <h2>Enlaces (a href)</h2>
+    <p>La etiqueta 'a' viene con el atributo 'href', este es para darle el valor de la url donde queremos ir, ya sea interna o externa. Para los enlaces esta el relativo y el absoluto, el enlace relativo es una ruta que se define en relacion a la ubicacion actual del archivo HTML por ejemplo: /index.html. El enlace absoluto es una ruta completa que incluye el protocolo, el nombre del dominio y la ruta del archivo por ejemplo: https://Youtube.com/YeisonGil </p>
+    <a href="/EjemploEnlace.html">Ir a la pagina de ejemplo</a> <br>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Pagina para saber TODO sobre HTML</a>
+    <h3>Con el atributo 'target' y el valor: </h3>
+    <ul>
+        <li>_blank: Este es para que el enlace se abra en una pestaña nueva.</li>
+        <li>_self: Este es el valor por defecto que tiene la etiqueta 'a' , no es necesario usarlo.</li>
+    </ul>
+    <a href="/EjemploEnlace.html" target="_blank">target="blank"</a>
+    <!-- ?--------------------------------------------------------------------------------------------------------------------------- -->
+
+    <p>Un atributo que se le puede agregar a todo tipo de etiquetas HTML es 'title', este es para cuando ponemos el cursor encima del elemento que le pongamos este atributo muestre un pequeño 'titulo' </p>
+    <li title="Ejemplo del atributo title">Pon el cursor encima de esta frase</li>
+    <!-- ?--------------------------------------------------------------------------------------------------------------------------- -->
+
+    <h2>Imagenes (img)</h2>
+    <p>La etiqueta 'img' viene con dos atributos, el atributo 'src' Especifica la ruta de la imagen. Puede ser una ruta relativa o absoluta. y el atributo 'alt' Describe el contenido de la imagen para usuarios que no pueden verla (por ejemplo, personas con discapacidad visual o navegadores que no admiten imágenes). Es importante para la accesibilidad web 'SEO'.</p>
+    <img src="/img/doberman.jpg" alt="Aqui hay una imagen de un perro de raza doberman y esta muy grande." title="Doberman Grande" width="200">
+    <!-- Le agregue el atributo title para probarlo y el width es el ancho, solo para que la imagen no se vea tan grande. -->
+    <!-- ?--------------------------------------------------------------------------------------------------------------------------- -->
+
+    <h2>Rutas</h2>
+    <p>Estan las rutas relativas y las rutas absolutas, Es lo mismo que con los enlaces. Ejemplo: <br> <!-- La etiqueta <br> es para dar un salto de linea, no es recomendable usarla pero en este caso se usa solo para dar el ejemplo de funcionamiento -->
+        Ruta absoluta: https://Youtube.com <br> 
+        Ruta relativa: 'carpeta/carpeta/archivo' <br>
+        <b>IMPORTANTE:</b> Para ir hacia carpetas o archivos atras de donde esta el archivo en el que estamos trabajando se hace de la siguiente manera: '../../' con dos puntos y la barra hasta que lleguemos al archivo que necesitamos. Para ir hacia adelante solo basta con poner el slash '/' y nos debe de mostrar los archivos o las carpetas que se necesitan.  
+        <!-- La etiqueta <b> es para darle un estilo de 'negrilla' a alguna frase o palabra que este envuelta por esta etiqueta, pero no es recomendable usarla ya que los estilos se dan siempre es desde el css. -->
+    </p>
+
+    <!-- ?--------------------------------------------------------------------------------------------------------------------------- -->
+    <h2>Formularios (form)</h2>
+    <p>Los formularios son elementos que permiten que los usuarios interactuen con la pagina web y enviar datos al servidor. estos se usan para recopilar datos de un usuario, permitir registros en el sitio web, realizar pedidos en linea, enviar comentarios o sugerencias etc. <br>
+    <form action=""> <!-- El atributo action, method y/o enctype son atributos que veremos mas adelante. Estos son para que el servidor indicado reciba esos datos y se puedan hacer cosas mas avanzadas. -->
+
+        <h4>Atributos importantes para los inputs:</h4>
+        <ul>
+            <h5>Atributos basicos</h5>
+            <li>type: Este es para darle el tipo de input, ya sea de tipo texto o email etc.</li>
+            <li>name: Asigna un nombre único al campo de entrada. Es necesario para poder identificar y recuperar el valor ingresado por el usuario posteriormente. Esto es para cuando los datos se envien al servidor.</li>
+            <li>value: Este es para darle un 'nombre descritivo al input'</li>
+
+            <h5>Atributos de control</h5>
+            <li>checked: Este solo funciona para los inputs de tipo checkbox y radio. Sirve para mostrar si el item esta seleccionado, por defecto es no.</li>
+            <li>readonly: Deshabilita la edición del campo, quedando como texto informativo.</li>
+            <li>disabled: Deshabilita el campo por completo, sin permitir interacción del usuario.</li>
+            <li>required: Este es para que el campo sea obligatorio</li>
+            <h5>Atributos de tamaño y presentacion</h5>
+
+            <li>size: Define el ancho del campo de entrada en caracteres (aproximadamente).</li>
+            <li>maxlength: Limita el número máximo de caracteres permitidos en el campo.</li>
+            <li>minlength: Limita el número minimo de caracteres permitidos en el campo.</li>
+            <li>placeholder: Este es para mostrar al usuario un ejemplo de lo que debe escribir en el campo y desaparece cuando el usuario empieza a escribir.</li>
+
+            <h5>Otros atributos</h5>
+            <li>autocomplete: Activa o desactiva el autocompletado del navegador según el tipo de campo.</li>
+            <li>pattern: Define una expresión regular para validar el formato de los datos introducidos.</li>
+            <li>id: Asigna un identificador único al elemento input, permitiendo un mejor control con CSS o JavaScript.</li>
+        </ul>
+
+        <h3>Tipos de 'inputs' que tiene un formulario:</h3>
+        <ul>
+            <h4>Datos textuales:</h4>
+            <li>
+                <input type="text" placeholder="Escribe algo aqui." >
+                <!-- Campo de texto libre de una línea. En este se pueden pedir datos como Nombre o apellidos etc. -->
+            </li>
+            <li>
+                <input type="email" placeholder="Correo electrónico">
+                <!-- Campo específico para direcciones de correo electrónico.  -->
+            </li>
+            <li>
+                <input type="password" placeholder="Contraseña">
+                <!-- Campo para contraseñas (caracteres ocultos). -->
+            </li>
+            <li>
+                <input type="search" placeholder="Buscar">
+                <!-- Campo optimizado para búsquedas (suele incluir botón de limpiar). -->
+            </li>
+            <li>
+                <input type="url" placeholder="https://Youtube.com">
+                <!-- Campo para ingresar URLs (dirección web). -->
+            </li>
+            <li>
+                <input type="tel" placeholder="Numero de telefono">
+                <!-- Campo para números de teléfono. -->
+            </li>
+
+            <h4>Datos Numericos y valores:</h4>
+            <li>
+                <input type="number" placeholder="Escribe un numero">
+                <!-- Campo para ingresar números. Se pueden definir valores mínimos y máximos permitidos. -->
+            </li>
+            <li>
+                <input type="range" step="5" max="50" value="25">
+                <!-- Control deslizante para seleccionar un valor dentro de un rango. 
+                step: Define el incremento o decremento entre valores consecutivos al mover la barra deslizante. Por ejemplo, step="5" indica saltos de 5 en 5.
+                min - max: Valor minimo y maximo seleccionable en el rango.
+                value: Valor inicial del rango.-->
+            </li>
+
+            <h4>Datos de Selección única o múltiple:</h4>
+            <li>
+                <input type="radio" name="radio" checked>
+                <input type="radio" name="radio">
+                <input type="radio" name="radio" disabled>
+                <label for="radio">Seleccion Unica</label>
+
+                <!-- Botón de radio. Permite elegir solo una opción de un grupo. 
+                Los atributos checked y disabled los use de prueba.-->
+            </li>
+            <li>
+                <input type="checkbox" disabled>
+                <input type="checkbox">
+                <input type="checkbox">
+                <label for="checkbox">Seleccion multiple</label>
+                <!-- Casilla de verificación. Permite seleccionar una o más opciones. -->
+            </li>
+
+            <h4>Datos de tipo fecha y hora:</h4>
+            <li>
+                <input type="date">
+                <label for="date">Fecha</label>
+
+                <!-- Campo para seleccionar una fecha. -->
+            </li>
+            <li>
+                <input type="time">
+                <label for="time">Hora</label>
+                <!-- Campo para seleccionar una hora. -->
+            </li>
+            <li>
+                <input type="datetime-local">
+                <label for="datetime-local">Dia, mes, año y hora</label>
+                <!-- Campo para seleccionar fecha y hora local. -->
+            </li>
+            <!-- <li>
+                <input type="datetime">
+                <!--  Campo para seleccionar fecha y hora. SE RECOMIENDA USAR EL INPUT DE TIPO "datetime-local" ya que este esta obsoleto.
+            </li> --> 
+            <li>
+                <input type="month">
+                <label for="month">Mes</label>
+                <!-- Campo para seleccionar un mes. -->
+            </li>
+            <li>
+                <input type="week">
+                <label for="week">Semana</label>
+                <!-- Campo para seleccionar una semana (menos común). -->
+            </li>
+
+            <h4>Datos de tipo archivo:</h4>
+            <li>
+                <label for="file">Sube un archivo</label>
+                <input type="file">
+                <!-- Permite seleccionar archivos desde el dispositivo del usuario. -->
+            </li>
+
+            <h4>Color:</h4>
+            <li>
+                <input type="color">
+                <!-- Campo para seleccionar un color. -->
+            </li>
+
+            <h4>Botones:</h4>
+            <li>
+                <input type="button" value="Boton para JavaScript">
+                <!-- Botón genérico que ejecuta acciones con JavaScript. -->
+            </li>
+            <li>
+                <input type="submit">
+                <!-- Botón que envía los datos del formulario al servidor. -->
+            </li>
+            <li>
+                <input type="reset">
+                <!-- Botón que limpia los campos del formulario y los deja en su estado inicial. -->
+            </li>
+        </ul>
+    </form>
+
+</body>
+
+</html>

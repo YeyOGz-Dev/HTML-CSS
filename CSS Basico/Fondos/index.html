@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BASICO - Fondos</title>
+    <link rel="shortcut icon" href="img/CSS.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <h1 class="fondos">Fondos</h1>
+    <h2>Propiedades:</h2>
+    <ul>
+        <li>background-color: Para darle el color </li>
+        <li>background-image: Para poner una imagen de fondo.</li>
+        <li>background-position: Define la posicion de la imagen.</li>
+        <li>background-repeat: Controla como se repite la imagen de fondo si es mas pequeña que el elemento</li>
+        <p>Se puede usar la propiedad 'background' como shorthand para estas cuatro propiedades por ejemplo: <br> background{#000 url("imagen") center no-repeat}
+        </p>
+        <h3>Otras propiedades del background:</h3>
+        <ul>
+            <li>background-size: Ajusta la imagen al ancho y alto, la mejor opcion es "cover" ya que este acomoda la imagen lo mejor posible, pero tambien se puede usar top, left, rigth o bottom para orientar la posicion de la imagen.</li>
+            <li>background-attachment: Define si la imagen de fondo se desplaza con el contenido del elemento o se queda fija en su lugar. Las opciones comunes son "scroll" (se desplaza con el contenido) y "fixed" (se queda fija). <a href="./attachment.html">Ejemplo aqui!</a></li>
+        </ul>
+    </ul>
+    <div class="box"></div>
+
+    <h1 class="Gradientes">Gradientes</h1>
+    <ul>
+        <li>Gradientes lineales: (linear-gradient) Estos gradientes transicionan entre colores en una línea recta. Puedes definir la dirección del gradiente, así como los colores y las posiciones de los puntos de parada a lo largo de la línea. Por ejemplo:
+            <br><code>background: linear-gradient(to bottom, #000 ,#06a);</code>
+        </li>
+        <p>Se puede elgir la direccion hacia la que va el gradiente, por ejemplo si se pone "to bottom" el primer color se desvanece desde arriba hacia abajo hasta combinarse con el otro color asignado. Tambien se le puede poner el % a cada color de cuanto queremos que se vea para ser mas especificos y se le pueden asignar mas de 2 colores.</p>
+    </ul>
+    <div class="lineal">Yeison Gil</div>
+    <ul>
+        <li>Gradientes Radiales: (radial-gradient): Estos gradientes transicionan entre colores en forma circular. Puedes definir el punto central del gradiente, así como los colores y las posiciones de los puntos de parada a lo largo del radio.</li>
+        <p>Basicamente desde el punto medio del elemento, el primer color se desvanece al segundo color (Aunque tambien puede tener mas de 2 colores) y tambien se le pueden asignar los % a cada color por ejemplo:</p>
+    </ul>
+    <div class="radial"></div> 
+
+<h1 class="Sombras">Sombras</h1>
+    <h2>1. box-shadow</h2>
+    <h3>Valores de las sombras para las cajas <br> 
+        (por eso es 'box-shadow' - 'sombra de caja'):</h3>
+    <ol>
+        <li>Primer valor: horizontal</li>
+        <li>Segundo valor: Vertical</li>
+        <li>Tercer valor: Desenfoque de la sombra</li>
+        <li>Cuarto valor: Extencion</li>
+        <li>Quinto valor: Color</li>
+        <p>Funciona para darle la sombra general a una caja por ejemplo:</p>
+    </ol>
+    <div class="box-shadow"></div>
+    <h2>2. text-shadow</h2>
+    <h3>Valores de sombra para el texto</h3>
+    <ol>
+        <li>Primer valor: horizontal</li>
+        <li>Segundo valor: Vertical</li>
+        <li>Tercer valor: Desenfoque de la sombra</li>
+        <li>Cuarto valor: Color</li>
+        <p class="parrafos">Por ejemplo:</p>
+    </ol>
+    <div class="text-shadow">
+        <h2>Yeison Gil Alzate</h2>
+    </div>
+
+    <h2>3. Sombras para imagenes</h2>
+    <ul>
+        <p class="parrafos">Para las imagenes podemos usar la propiedad box-shadow comun y corriente. pero si le
+            aplicamos el box-shadow a las imagenes que son .png vamos a tener un problema como este:</p>
+        <div class="png_box-shadow">
+            <img class="img_box-shadow" src="./img/pngegg.png" alt="">
+        </div>
+        <p class="parrafos">Para solucionar este problema en las imagenes usaremos la propiedad "filter: drop-shadow" y sus valores (para este no funciona la extencion de la sombra)
+        </p>
+        <div class="png_filter-shadow">
+            <img class="img_box-shadow" src="./img/pngegg.png" alt="">
+        </div>
+    </ul>
+
+</body>
+
+</html>

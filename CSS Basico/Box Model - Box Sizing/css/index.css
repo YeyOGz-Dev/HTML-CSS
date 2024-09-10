@@ -1,0 +1,102 @@
+.ejemplos_padding {
+    font-size: 20px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+/* ?SHORTHAND: es la manera de evitar escribir la direccion a la cual queremos el relleno del elemento, normalmente se escribe padding-top, padding-right, padding -bottom, padding-left. pero con el shorthand podemos solamente escribir  "padding: y la medida. esto va como las manecillas del reloj, arriba-derecha-abajo-izquierda."*/
+/* 
+*padding con 1 valor: se le aplica el mismo valor a todos los lados el elemento 
+*padding con 2 valores: arriba y abajo - derecha e izquierda.
+*padding con 3 valores: arriba - derecha e izquierda - abajo
+*padding con 4 valorres: arriba - derecha - abajo - izquierda
+*/
+.conPadding {
+    background-color: rgb(17, 0, 255);
+    padding: 50px;
+    margin: 0 20px 0 0;
+}
+
+.sinPadding {
+    background-color: rgb(255, 30, 0);
+}
+
+.form {
+    background-color: limegreen;
+    width: 300px;
+    padding: 20px;
+}
+
+.form_input {
+    width: 95%;
+    padding: 5px;
+}
+
+.form_submit {
+    width: 50%;
+    background-color: #0a0;
+    color: #fff;
+}
+
+/* ! Margin */
+/* 
+*Tambien se le puede aplicar el shorthand como al padding.
+*/
+
+.box {
+    display: block;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(1, 66, 4);
+    margin: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+.box-2 {
+    margin: 40px 20px;
+}
+
+/* ! Border */
+
+.ejemplo-border {
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    color: black;
+    background-color: #00d9ff;
+
+}
+
+.ejemplos_border {
+    width: 150px;
+    background-color: #007dc5;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin: 30px 20px;
+}
+
+.ejemplo_practico_1 {
+    border: 5px solid black;
+    border-radius: 10px 30px 80px 80px;
+}
+
+.ejemplo_practico_2 {
+    border: 10px solid #0a0;
+    border-top-color: black;
+    border-left-color: red;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.ejemplo_practico_3 {
+    border: 10px solid #0a0;
+    border-top-color: black;
+    border-left-color: red;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}

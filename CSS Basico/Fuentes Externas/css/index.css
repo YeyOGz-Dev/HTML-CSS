@@ -1,0 +1,38 @@
+.link_head{
+    font-family: Montserrat;
+    /* Copiando el link completo en el head del archivo .html */
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'MontRegu';
+    src: url('../fonts/Montserrat-Regular.ttf') format(truetype);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'MontReguItalic';
+    src: url('../fonts/Montserrat-Regular.ttf') format(truetype);
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'MontReguItalic';
+    src: url('../fonts/Montserrat-BoldItalic.ttf') format(truetype);
+}
+@font-face {
+    font-family: 'MontExtraBold';
+    src: url('../fonts/Montserrat-ExtraBold.ttf') format(truetype);
+}
+
+.font-face-1{
+    font-family: MontRegu;
+}
+.font-face-2{
+    font-family: MontReguItalic;
+}
+.font-face-3{
+    font-family: MontExtraBold;
+}

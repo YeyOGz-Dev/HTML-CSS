@@ -1,0 +1,64 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'proxima nova';
+    height: 80vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card{
+    width: 400px;
+    margin: 20px auto;
+    margin-top: 50px;
+    padding: 20px;
+    background: linear-gradient(to top, #000e 15%, #48e ) ;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    text-shadow: 3px 3px 3px #000c;
+    box-shadow: 0 0 40px 0 #000c;
+}
+.card_img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background: url("../img/Perfil\ 2.jpg") center / cover no-repeat ;
+    margin: 10px auto;
+    box-shadow: 0 0 20px 0 #000c;
+}
+
+.card_h1{
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+
+.card_h2 {
+    padding-bottom: 35px;
+}
+
+.card_p {
+    padding: 15px;
+    font-size: 1.8rem;
+    text-align: justify;
+    text-shadow: 0px 0px 3px #48e;
+}
+
+.div_link {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.v1{
+    color: #48e;
+    font-weight: bold;
+    font-size: 2.5rem;
+}

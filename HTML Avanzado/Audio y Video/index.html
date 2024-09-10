@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio y Video</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <h1>Audio y video</h1>
+    <h2>Video</h2>
+    <h3>Atributos del video</h3>
+    <ul>
+        <li>src: para poner la ruta del video</li>
+        <li>controls: Añade los controles basicos como play, pause etc.</li>
+        <li>autoplay: para que el video se reproduzca automaticamente cuando entremos a la pagina.</li>
+        <li>muted: para que cuando entremos a la pagina el video se reproduzca en silencio. este atributo va de la mano
+            con el autoplay</li>
+        <li>loop: para cuando es un video corto, que se reproduzca automaticamente</li>
+        <li>poster: Imagen que se muestra antes de que se reproduzca el video.</li>
+        <li>track: Para definir subtitulos al video y tiene los siguientes Atributos.</li>
+        <ul>
+            <li>src: ruta del archivo de los subtitulos</li>
+            <li>default: aparecen los subtitulos por defecto</li>
+            <li>kind: con el valor "captions" definimos que van a ser subtitulos</li>
+            <li>srclang: con el valor "es" define que los subtitulos seran en español. </li>
+            <li>label: con el valor "Español (LAN)" Sirve para mostrar en la configuracion de los subtitlos en que idioma seran.</li>
+        </ul>
+    </ul>
+    <video src="./vid/videoPrueba.mp4" controls autoplay muted>
+        <!-- En este caso no hay un archivo de subtitlos pero asi quedaria mas o menos. -->
+        <track src="edfw" default kind="captions" srclang="es" label="Español (LAN)">
+        Aqui va el texto que va a ver el usuario si depronto el navegador no carga el video. No funciona el atributo alt
+        ni title.
+    </video>
+
+    <h2>Audio</h2>
+    <h3>Atributos del audio</h3>
+    <ul>
+        <li>src: Ruta del audio</li>
+        <li>controls: controles del audio</li>
+    </ul>
+    <audio src="./aud/audiopueba.opus" controls muted></audio>
+</body>
+
+</html>

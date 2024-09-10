@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textarea, Labels, Selec, Datalist, Option, Fieldset y Legend</title>
+    <meta name="author" content="Yeison Gil">
+    <meta name="description" content="Esta pagina es para aprender sobre el textarea y los labels">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="../img/HTML.png" type="image/png">
+</head>
+
+<body>
+    <form class="form">
+        <h2 class="form_title">Formulario de contacto</h2>
+        <!-- !Usando Textarea, Labels, Selec, Datalist, Option, Fieldset y Legend -->
+        <!-- ?Fieldset: Se usa para crear secciones dentro de un formulario, en este ejemplo se usó para la informacion basica de un usuario. -->
+        <fieldset class="fieldset1">
+            <!-- ?Legend: Este se usa con el fieldset, es para darle un "titulo" a la seccion del formulario que esta contenido por el fieldset. -->
+            <legend class="legend1">Información Básica</legend>
+            <div class="form_input">
+                <!--
+                ? Label: sirve para hacer mas accesible un formulario dandole la etiqueta label a cada input, tambien nos permite darle el focus al input dandole click al nombre (contenido) del label. El label es una etiqueta en linea, por lo cual no podemos asignarle margin, padding etc.
+            *Hay dos maneras de usar el label, La primera y la que mas me gusta personalmente es encerrando todo el input dentro de la etiqueta label por ejemplo:*
+            -->
+                <label class="form_label">Nombre
+                    <input type="text" placeholder="Yeison Gil">
+                </label>
+            </div>
+            <!-- 
+            *La otra manera de usar el label es creando la etiqueta y usar el atributo for. Es OBLIGATORIO crearle un "id" al input y colocarle es mismo nombre para que pueda funcionar. Por ejemplo:
+         -->
+            <div class="form_input">
+                <label for="email" class="form_label ">Correo Electronico</label>
+                <input type="email" id="email" placeholder="example@gmail.com">
+            </div>
+
+            <div class="form_input">
+                <label for="">Teléfono
+                    <input required type="tel" placeholder="1234567890" minlength="10" maxlength="10">
+                </label>
+            </div>
+        </fieldset>
+        <!--
+            ?Select: La etiqueta select es para crear un desplegable con varias opciones (etiqueta option).
+                *Debe de tener un name de referencia para el servidor.*
+
+            ?Option: Son las opciones que se despliegan de la etiqueta select y datalist.
+                *El value es lo que recibe el servidor.*
+         -->
+        <div class="form_input">
+            <label>Elije el tipo de Usuario
+                <select class="form_select" name="tipo_de_usuario">
+                    <option value="...">...</option>
+                    <option value="dev">Desarrollador</option>
+                    <option value="boss">Jefe</option>
+                    <option value="student">Estudiante</option>
+                </select>
+            </label>
+        </div>
+
+        <!-- 
+            ?Datalist: Es parecido al "select" pero se le debe añadir la etiqueta input con el atributo list y ese valor se lo tenemos que poner al id de la datalist para que se conecten y funcione correctamente. Es una buena opcion usar datalist . un ejemplo de uso seria para elegir alguna ciudad, ya que podriamos escribir un poco de texto para que nos muestre los resultados con las mismas letras y asi el usuario pueda llenar los datos que se le solicitan mas rapido.
+            *Primero se crea el input con el atributo list y en este caso el valor sera "ciudad", luego se crea el datalist con el id "ciudad" (el atributo name es para interactuar con el servidor pero tambien se le debe poner el mismo valor).*
+            *Dentro del datalist creamos las options donde el valor va a ser el principal, lo otro sera una breve descripcion si es necesario*
+         -->
+        <div class="form_input">
+            <label>¿De que ciudad eres??
+                <input list="ciudad">
+                <datalist id="ciudad" class="form_select" name="ciudad">
+                    <option value="Itagui">Santa Maria</option>
+                    <option value="Itagui">El Carmelo</option>
+                    <option value="Envigado">Los Naranjos</option>
+                    <option value="La Estrella">Yarumito</option>
+                    <option value="El Poblado">Provenza</option>
+                    <option value="Sabaneta">Calle del banco</option>
+                </datalist>
+            </label>
+        </div>
+
+        <!--? Textarea: Nos sirve para dejar un cuadro para que el usuario ingrese un texto largo, es casi igual que un input de tipo texto pero con sus propias propiedades. -->
+        <div class="form_input">
+            <label class="form_label">Mensaje
+                <textarea class="form_textarea" id="" rows="6"
+                    placeholder="Deja aquí tus comentarios..."></textarea></label>
+        </div>
+
+        <!--  
+        *Una de sus propiedades es que viene con una fuente especifica, esto se puede cambiar dandole el font-family directamente a ese textarea.*
+
+        Es recomendable ponerle el estilo "resize:none" para que el usuario no pueda agrandar el cuadro de texto y se dañe el elemento, ya que añadiendole el atributo "row" se le puede dar un tamaño estandar al textarea.*
+
+        *readonly / disabled: estos atributos desactivan totalmente el textarea, la diferencia de estos es que el atributo readonly deja hacer focus en el elemento, en cambio el disabled no.
+        *Otra diferencia de estos atributos es que el readonly si envia los datos al servidor, el disabled no.*
+        -->
+
+
+        <div class="form_input form_input_button">
+            <input type="submit">
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BASICO - Box Model y Box Sizing</title>
+    <link rel="shortcut icon" href="img/CSS.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <h1>Box Model (Modelo de caja) IMPORTANTISIMO!</h1>
+    <h2>Propiedades del box model</h2>
+    <ol>
+        <li>Content (contenido): El área central que muestra el contenido real del elemento, como texto, imágenes o
+            videos.</li>
+        <li>Padding (relleno): Un área que agrega espacio alrededor del contenido.</li>
+        <li>Border (borde): La línea decorativa que rodea el relleno y el contenido.</li>
+        <li>Margin (margen): Un área transparente que rodea todo el cuadro, incluyendo el borde y el relleno. la
+            etiqueta "body" tiene un margin por defecto. Es
+            importante saber que el margin no hace parte de la caja en general ya que este se agrega es AFUERA de la
+            caja, este sirve para separar los elementos de otros.</li>
+        <p>El ancho (width) y alto (height) totales de un elemento vienen determinados por el tamaño del contenido más
+            el padding, el
+            border y el margin. (content-box)</p>
+    </ol>
+    <h2>Ejemplos del padding:</h2>
+    <div class="ejemplos_padding">
+        <div class="conPadding">Este texto es el contenido</div>
+        <div class="sinPadding">Este texto es el contenido</div>
+    </div>
+
+    <hr> <!-- Esta etiqueta crea una linea "separadora"-->
+
+    <h2>Ejemplo de formulario con padding</h2>
+    <form class="form">
+        <input class="form_input" type="text" placeholder="Nombre">
+        <input class="form_input" type="email" placeholder="Apellido">
+        <input class="form_input" type="tel" placeholder="Celular" minlength="10" maxlength="10">
+        <input class="form_input form_submit" type="submit">
+    </form>
+    <hr>
+
+    <h2>Ejemplos del margin:</h2>
+    <p>Para aclarar, hay algo que se llama 'margin-collapse' que hace que el margen de los elementos se SUPERPONGAN y
+        reciban el valor mayor del elemento. Osea que si hay una caja con 20px de margin arriba y abajo y debajo de esa
+        caja hay otra con 30px de margin arriba y abajo, hace que la de abajo que tiene mayor valor valga como el
+        margen, basicamente no se suma el margen de abajo y de arriba de cada elemento si no que se superpone y le da el
+        valor del margen mayor.</p>
+    <div class="box box-1">margin: 20px arriba y abajo.</div>
+    <div class="box box-2">margin: 40px arriba y abajo</div>
+    <div class="box box-3">margin: 20px arriba y abajo.</div>
+
+    <hr>
+
+    <h2>Border</h2>
+    <p>Tiene 4 aspectos fundamentales:</p>
+    <ul>
+        <li class="border-width">border-width: Grosor del borde</li>
+        <li class="border-style">border-style: Estilo del borde</li>
+        <li class="border-color">border-color: Color del borde</li>
+        <li class="border-radius">border-radius: Redondeado del borde</li>
+    </ul>
+    <p>Es importante saber que se puede usar el shorthand (border:) para los bordes, PERO la propiedad border-radius va
+        aparte por ejemplo:</p>
+    elemento{border: 5px solid black; (width - style - color). <br>
+    border-radius: 5px;<br> }
+    <div class="ejemplo-border">Muestra</div>
+    <p>Para definir un borde en uno de los lados del elemento se debe usar border-top etc ya que como a cada uno se le
+        agregan propiedades, entonces en este caso si debe de ser separado.</p>
+    <p>El border-radius si se puede usar como shorthand, ya que podemos darle el redondeado con 1,2,3 y/o 4 valores.</p>
+
+    <div class="ejemplos_border ejemplo_practico_1">Ejemplo Practico 1</div>
+    <div class="ejemplos_border ejemplo_practico_2">Ejemplo Practico 2</div>
+    <div class="ejemplos_border ejemplo_practico_3">Ejemplo Practico 3</div>
+
+    <hr>
+
+    <h2>Box Sizing</h2>
+    <p>Define como se calcula el ancho y alto total de un elemento. el valor por defecto es box-sizing: content-box;
+        Pero esto puede causar problemas en el diseño ya que las medidas se vuelven incalculables. <br>
+        Para esto hoy en dia tenemos el box-sizing: border-box; que este nos evita estar calculando el ancho y el alto
+        de un elemento ya que si le definimos un ancho y un alto este sera igual asi le agreguemos el padding y el
+        borde.</p>
+    <ul>
+        <li class="content-box">Este es el valor por defecto. El ancho y alto solo incluyen el contenido del elemento.
+            Los bordes y el padding se suman al tamaño final. Lo mejor es cambiarle esta opcion por border-box.</li>
+        <li class="border-box">El ancho y alto incluyen el contenido del elemento, los bordes y el padding.
+            <h3>Ventajas de usar box-sizing: border-box;</h3>
+            <ul>
+                <li>Facilita el diseño: Puedes definir el ancho y alto de un elemento y saber que será el tamaño total
+                    del elemento, incluyendo bordes y padding.</li>
+
+                <li>Evita problemas de diseño: No tendrás que preocuparte por que los bordes y el padding se sumen al
+                    tamaño final del elemento y causen problemas de diseño.</li>
+                <li>Mejora la consistencia: Todos los elementos se comportarán de la misma manera, lo que hace que tu
+                    diseño sea más consistente.</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: "proxima nova";
+    background: linear-gradient(#303030, black);
+    color: #eeeeee;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form{
+    min-width: 375px;
+    max-width: 550px;
+    margin: 40px auto;
+    background-color: #0005;
+    padding: 10px 25px;
+    box-shadow: 0 0 30px #fff2;
+    border-radius: 7px
+}
+
+.form_title{
+    padding: 20px 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form_p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form_input{
+    padding: 15px 12px;
+}
+
+.form_input input, .form_textarea,.form_select{
+    padding: 15px 20px ; 
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    background-color: #0005;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 0 5px #eeeeee;
+    color: #eeeeee;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 1.6rem;
+}
+
+.form_select option{
+    background-color: #000000dd;
+}
+
+.form_textarea{
+    font-family: "proxima nova";
+    resize: none;
+}
+
+.form_label{
+    font-size: 1.5rem;
+    color: #eeeeee;
+}
+
+.form_input_button{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form_input_button input{
+    cursor: pointer;
+}
+
+.fieldset1{
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.legend1{
+    padding: 0 10px;
+    color: #999;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BASICO - Selectores</title>
+    <link rel="shortcut icon" href="img/CSS.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <h1>Que es CSS?</h1>
+    <p>
+        Cascading Style Sheet (Hojas de estilo en cascada) Diseño de la pagina web segun el HTML.
+    </p>
+
+    <h2>Formas de agregar los estilos a la pagina</h2>
+    <h3>Existen 3 formas:</h3>
+    <ol>
+        <li>Estilos en linea: NO SE RECOMIENDA. Se le agrega el atributo "style" a la etiqueta HTML y se le dan las propiedades.</li>
+        <li>Etiqueta "style" en el mismo HTML: NO SE RECOMIENDA. Con la etiqueta style tambien se pueden agregar los estilos a las etiquetas. </li>
+        <li>Hoja externa: esta es la mejor practica para implementar los estilos a la pagina web, ya que es mas ordenado el codigo por que se separa totalmente el css y el HTML para cuando necesitemos escribir y leer el codigo sea mas amigable. <br>
+        Se crea una carpeta llamada CSS o styles en la carpeta padre para saber sobre que es la carpeta y luego crear un archivo llamado styles.css o index.css (esto dependera de como querramos diferenciar los archivos, ya que lo importante es que el archivo termine con .css)</li>
+    </ol>
+
+    <h2>Estructura para agregar los estilos en el archivo .css:</h2>
+    <p>Vamos a tomar como ejemplo las etiqueta 'p' </p>
+    <ul>
+        <li>Selector por elemento: Agregamos la etiqueta html y le damos sus estilos en el archivo .css: p{ propiedad = valor; }; (De esta manera se le dara el mismo estilo a TODAS las etiquetas de este tipo.)</li>
+        <li class="li">Selector de clase: a la etiqueta html se le agrega el atributo 'class' y se le asigna un nombre de referencia para ese elemento (a cada elemento se le pueden agregar las clases que sean) y en el archivo .css lo haremos asi: (punto al inicio y luego el nombre de la clase de referencia)  .li{ propiedad = valor; }; </li>
+        <li id="li">Selector de id: A la etiqueta html se le agrega el atributo id con el nombre del identificador (es importante saber que un id solo se le puede agregar a un solo elemento, no se puede tener dos o mas elementos con el mismo id0). Igual que con el selector de clase pero esta vez, como es con el selector de id es con el signo '#' (# al inicio y luego el nombre del identificador)  #li{ propiedad = valor; };</li>
+    </ul>
+    <p>Es importante saber que para el css es mejor manejar los estilos con el atributo "class" Ya que los elementos con id son mas importantes para el JavaScript. Ejemplo de uso:</p>
+
+    <h3>Ingredientes</h3>
+    <ul>
+        <li class="ingrediente_faltante">Leche</li>
+        <li class="">Huevos</li>
+        <li id="ingrediente_secreto">Harina</li>
+        <li class="">Azucar</li>
+        <li class="">Milo</li>
+        <li class="ingrediente_faltante">Sal</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: "proxima nova";
+}
+
+*{
+    box-sizing: border-box;
+}
+
+table{
+    text-align: center;
+    border-spacing: 20px;
+    margin: auto;
+    max-width: 500px;
+    box-shadow: 0 0 30px #1f1f1f33;
+}
+
+.title{
+    border: none;
+}
+
+th, td{
+    border-bottom: 1px solid #000;
+    padding: 0px 20px;
+}
+
+td{
+    color: #666;
+}
+
+tfoot td{
+    color: initial;
+}
+
+.total_foot, .dato_foot{
+    border: none;
+    padding: 10px;
+}
