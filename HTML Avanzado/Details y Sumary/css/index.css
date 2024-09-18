@@ -5,6 +5,7 @@ html{
 body{
     font-size: 1.6rem;
     font-family: "proxima nova";
+    margin: 0;
 }
 
 *{
