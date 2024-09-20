@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectores - INTERMEDIO</title>
+    <link
+      rel="stylesheet"
+      href="../../CSS Basico/Fondos/img/CSS.webp"
+      type="image/webp"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <h1>Selectores</h1>
+    <!-- <p class="p1">
+      Existen varios tipos de selectores, ya sea por tipo, clases, id's entre
+      otros.
+    </p> -->
+
+    <div>
+      <h2>Selectores por atributo</h2>
+      <ul>
+        <li>
+          Estos seleccionan elementos basados en un atributo o valor especifico
+          de un atributo y tiene algunas variaciones adicionales por ejemplo:
+          <br />
+          <ul>
+            <li>
+              Con esto estamos seleccionando a TODAS las etiquetas "input" que
+              son de tipo "text" y le estamos dando su estilo. ¡Su valor tiene
+              que ser exacto.!
+              <br />
+              <span class="selec">input[type="text"] { 'estilos' }</span><br />
+              <input type="text" name="ejemplo" id="ejemplo" />
+            </li>
+            <li>
+              $= Con esto seleccionamos a los elementos cuyo valor TERMINEN con
+              el valor especificado. En este ejemplo es como si seleccionaramos
+              TODOS los elementos que terminen en "jpg" <br />
+              <span class="selec">img[src$="jpg"] { 'estilos' }</span><br />
+              <img
+                src="../../HTML Basico/img/doberman.jpg"
+                alt="Imagen de un doberman"
+              />
+            </li>
+            <li>
+              ^= Con esto seleccionamos a los elementos cuyo valor EMPIEZE con
+              el valor especificado. En este ejemplo es como si seleccionaramos
+              TODOS los elementos que empiecen por "png" <br />
+              <span class="selec">img[src$="png"] { 'estilos' }</span><br />
+              <img
+                src="../../HTML Basico/img/HTML.png"
+                alt="Imagen de un doberman"
+              />
+            </li>
+            <li>
+              *= Con esto seleccionamos a TODOS los elementos cuyo valor del
+              atributo contiene la cadena especificada. Su valor no tiene que
+              ser exacto, por ejemplo si la cadena en el html dice youtube.com
+              solo basta con poner youtube y funcionara, pero algo importante es
+              que no se deben mezclar las mayuculas y las minusculas ya que eso
+              si daria una variacion.<br />
+              <span class="selec">a[href*="example"] { 'estilos' }</span> <br />
+              <a href="ejemplos">Ejemplo de *=</a>
+            </li>
+          </ul>
+        </li>
+        <h2>Selectores por valor descendente</h2>
+        <li>
+          Estos seleccionan elementos que son descendientes de otro, un espacio
+          entre dos selectores indica una relacion descentente por ejemplo:
+        </li>
+        <ul>
+          <li>
+            div p : Así estamos seleccionando TODAS las etiquetas p que estan
+            dentro de un div, en el css seria de la siguiente manera: <br />
+            <span class="selec">div p {'estilos'}</span><br />
+            <div><p>p dentro de un div para el ejemplo</p></div>
+            Esto tambien se puede hacer en orden descendente con clases, id etc
+            por ejemplo: <br />
+            <span class="selec">etiqueta .clase etiqueta {'estilos'}</span
+            ><br />
+          </li>
+        </ul>
+        <h2>Selector de Hijo Directo</h2>
+        <li>
+          Estos seleccionan elementos que son descendientes de otro, un espacio
+          entre dos selectores indica una relacion descentente por ejemplo:
+        </li>
+        <ul>
+          <li>
+            ul > .list-item : Así estamos seleccionando TODAS las etiquetas 'li'
+            de clase 'list-item' que estan dentro de una 'ul', en el css seria de la
+            siguiente manera: <br />
+            <span class="selec">ul > .list-item {'estilos'}</span><br />
+            <ul>
+              <li class="list-item">.list-item dentro de una etiqueta 'ul'</li>
+            </ul>
+          </li>
+        </ul>
+      </ul>
+    </div>
+  </body>
+</html>
