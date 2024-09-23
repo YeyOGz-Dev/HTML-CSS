@@ -62,7 +62,7 @@
               que no se deben mezclar las mayuculas y las minusculas ya que eso
               si daria una variacion.<br />
               <span class="selec">a[href*="example"] { 'estilos' }</span> <br />
-              <a href="ejemplos">Ejemplo de *=</a>
+              <a href="index.html">Ejemplo de *=</a>
             </li>
           </ul>
         </li>
@@ -85,21 +85,36 @@
         </ul>
         <h2>Selector de Hijo Directo</h2>
         <li>
-          Estos seleccionan elementos que son descendientes de otro, un espacio
+          > Este selecciona elementos que son descendientes de otro, un espacio
           entre dos selectores indica una relacion descentente por ejemplo:
         </li>
         <ul>
           <li>
             ul > .list-item : Así estamos seleccionando TODAS las etiquetas 'li'
-            de clase 'list-item' que estan dentro de una 'ul', en el css seria de la
-            siguiente manera: <br />
+            de clase 'list-item' que estan dentro de una 'ul', en el css seria
+            de la siguiente manera: <br />
             <span class="selec">ul > .list-item {'estilos'}</span><br />
             <ul>
               <li class="list-item">.list-item dentro de una etiqueta 'ul'</li>
             </ul>
           </li>
         </ul>
+        <h2>Selector Adyacente</h2>
+        <li>
+          + Este selecciona al elemento que es hermano inmediato de otro, esto
+          solo aplica a la primera etiqueta siguiente de la seleccionada, por
+          ejemplo si tenemos una ul y tenemos 5 li, solo
+          llamariamos al primer li de la siguiente manera:
+        </li> 
+        <span class="selec">ul + li {'estilos'}</span>
+        <h2>Selector De Hermanos Generales</h2>
+        <li>
+          ~ Este selecciona a todos los elementos hermanos que siguen a un elemento, por ejemplo si tenemos un div y dentro de ese div tenemos 3 elementos 'p' este los seleccionara a todos, diferente al hermano Adyacente que solo selecciona al primer elemento.
+        </li> 
+        <span class="selec">div ~ p {'estilos'}</span>
+
       </ul>
     </div>
   </body>
 </html>
+ 

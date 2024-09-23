@@ -24,9 +24,10 @@ h1{
 h2{
   text-align: center;
   background-color: green;
+  margin-top: 20px;
 }
 
-.p1, div, ul{
+.p1, div{
   font-size: 2.5rem;
   padding: 20px;
 }
@@ -34,6 +35,10 @@ h2{
 .selec{
   font-family: monospace;
   color: #48e;
+}
+
+ul{
+  padding: 0px 20px;
 }
 
 li{
@@ -46,11 +51,12 @@ li{
 /** Selector por atributo por valor exacto */
 input[type="text"] {
   border: none;
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
   outline: none;
   background-color: #48e;
   padding: 10px;
   font-size: 20px;
+  color: #fff;
 }
 
 /** Selector por atributo que TERMINA en... */
@@ -66,7 +72,7 @@ img[src^="../"]{
 }
 
 /** Selector por atributo que contiene el texto especificado... */
-a[href*="ejem"] {
+a[href*="inde"] {
   color: rgb(0, 255, 0);
 }
 
@@ -78,8 +84,17 @@ div p{
 /* ? Selector hijo directo */
 ul > .list-item{
   color: orange;
-}
-
-h2 + ul + li{
   padding: 0;
 }
+
+/* ?Selector adyacende ( selecciona la etiqueta SIGUIENTE de la seleccionada ) */
+
+/* *TODO ul + li{
+  padding: 0;
+} */
+
+/* ?Selector de hermanos generales ( selecciona la etiqueta SIGUIENTE de la seleccionada ) */
+
+/* *TODO ul ~ li{
+  padding: 20px 0 20px 0;
+} */
