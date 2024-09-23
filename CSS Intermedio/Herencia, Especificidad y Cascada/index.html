@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herencia, Especificidad y Cascada en CSS</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="shortcut icon" href="../img/CSS.webp" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <h1>Herencia, Especificidad y Cascada en CSS</h1>
+      <section class="section herencia">
+        <h2 class="section_title">Herencia</h2>
+        <p>
+          La herencia es un concepto clave que determina cómo las propiedades de
+          estilo de los elementos HTML se heredan a sus elementos hijos. Hay
+          propiedades que si se heredan y otras no:
+        </p>
+        <h3>1. Propiedades que se heredan por defecto:</h3>
+        <ul>
+          <li>color</li>
+          <li>font-family</li>
+          <li>font-size</li>
+          <li>line-heigth</li>
+          <li>text-align</li>
+        </ul>
+        <h3>2. Propiedades que NO se heredan</h3>
+        <ul>
+          <li>margin</li>
+          <li>padding</li>
+          <li>border</li>
+          <li>background</li>
+          <li>width</li>
+        </ul>
+        <h3>3. Propiedad "inherit"</h3>
+        <p>Esta propiedad sirve para forzar un valor que no es heredable</p>
+        <h3>4. Valores "initial" y "unset"</h3>
+        <ul>
+          <li>
+            initial: Restablece la propiedad al valor predeterminado del
+            navegador.
+          </li>
+          <li>
+            unset: Establece la propiedad al valor predeterminado si no es
+            heredable o la hereda si es heredable.
+          </li>
+        </ul>
+      </section>
+      <section class="section especificidad">
+        <h2 class="section_title">Especificidad</h2>
+        <p>
+          La especificidad define qué tan especifica o fuerte es una regla en
+          CSS para un elemento en particular. Cuanto mas específica sea una
+          regla, mayor será su prioridad. Los selectores de especificidad se
+          dividen en cuatro categorias:
+        </p>
+        <ol>
+          <li>Estilos en linea (atributo <code>style</code> en HTML)</li>
+          <li>Selectores de ID ( #mi-id )</li>
+          <li>
+            Selectores de Clase ( .mi-clase ), pseudoclases ( :hover, :nth-child
+            ) y selectores de atributos ( [type="text"] )
+          </li>
+          <li>
+            Selectores de tipo o etiqueta ( div, p, h1 ) y pseudoelementos (
+            ::before, ::after )
+          </li>
+        </ol>
+        <h3>Valor de cada selector:</h3>
+        <ul>
+          <li>Estilo en Linea (1,0,0,0)</li>
+          <li>Selector de ID: (0,1,0,0)</li>
+          <li>Selector de clase: (0,0,1,0)</li>
+          <li>Selector de tipo o etiqueta: (0,0,0,1)</li>
+        </ul>
+        <h3>Reglas importantes sobre la especificidad</h3>
+        <ul>
+          <li>
+            Los selectores de ID son más específicos que los selectores de
+            clase.
+          </li>
+          <li>
+            Los selectores de clase son más específicos que los selectores de
+            tipo o etiqueta.
+          </li>
+          <li>
+            Si varios selectores tienen la misma especificidad, se aplica el que
+            aparece más tarde en el CSS.
+          </li>
+          <li>
+            El valor !important puede anular la especificidad, pero debe usarse
+            con precaución. en el mejor de los casos es mejor no usar esta
+            regla.
+          </li>
+        </ul>
+      </section>
+      <section class="section cascada">
+        <h2 class="section_title">Cascada</h2>
+        <p>
+          La cascada en CSS es el proceso mediante el cual el navegador decide
+          cuál de lasl reglas aplicadas a un mismo elemento debe tener
+          prioridad. Se basa en tres principios:
+        </p>
+        <h3>Origen de las reglas</h3>
+        <ul>
+          <li>Hojas de estilo del navegador (Por defecto)</li>
+          <li>Hojas de estilo del autor (Las que se desarrollan)</li>
+          <li>
+            Hojas de estilo del usuario (Si el usuario ha personalizado su
+            navegador)
+          </li>
+        </ul>
+        <h3>Especificidad</h3>
+        <p>
+          Los estilos con mayor especificidad tienen prioridad sobre los menos
+          especificos.
+        </p>
+        <h3>Orden de aparición</h3>
+        <p>
+          Si dos reglas tienen la misma especificidad, la última en aparecer en
+          el codigo tendrá prioridad.
+        </p>
+        <h3>La propiedad " !IMPORTANT "</h3>
+        <p>
+          Usar esta propiedad en una declaración de estilo hace que esta regla
+          tenga la máxima prioridad. Independientemente de la especificidad o el
+          orden.
+        </p>
+      </main>
+      <p class="conclusion">En conclusion, Lo que es la Especificidad y la Cascada en CSS trabajan juntos para definir cómo se aplican los estilos en una página.</p>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+  background-color: #111;
+  margin: 0;
+  padding: 0;
+  font-family: "proxima nova";
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+h1{
+  background-color: #48e;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 3rem ;
+  margin: 0;
+}
+
+.section{
+  margin: 0 40px;
+}
+
+.section_title{
+  text-align: center;
+  margin: 30px 0;
+  padding: 10px 0;
+  background-color: rgba(255, 0, 0, 0.582);
+  color: #fff;
+  border-radius: 5px;
+  font-size: 2.8rem;
+}
+
+h3{
+  font-size: 2.5rem;
+  color: #48e;
+}
+
+p{
+  font-size: 2rem;
+  text-align: justify;
+}
+
+li{
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+li::marker{
+  color: red;
+}
+
+.conclusion{
+  background-color: #48e;
+  padding: 20px;
+  margin: 0;
+  font-weight: bold;
+
+}
