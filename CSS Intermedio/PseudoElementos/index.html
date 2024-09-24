@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PseudoClases Nuevas</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="shortcut icon" href="../img/CSS.webp" type="image/x-icon" />
+  </head>
+  <body>
+    <h1>PseudoElementos</h1>
+    <main>
+      <p>
+        Los PseudoElementos son palabras clave que se añaden a selectores para
+        aplicar estilos a partes específicas del contenido de un elemento.
+      </p>
+      <h2>Principales PseudoElementos</h2>
+      <section class="pseudo principales">
+        <ul>
+          <li>
+            <h3>::before</h3>
+            Este inserta contenido <strong>ANTES</strong> del contenido de un elemento, Se
+            utiliza para agregar elementos decorativos, como iconos o texto
+            adicional por ejemplo:
+            <p class="p_before">Parrafo before</p>
+          </li>
+          <li>
+            <h3>::after</h3>
+            Este inserta contenido <strong>DESPUES</strong> del contenido de un elemento, Se
+            utiliza para agregar elementos decorativos, como iconos o texto
+            adicional por ejemplo:
+            <p class="p_after">Parrafo after</p>
+          </li>
+          <li>
+            <h3>::first-letter</h3>
+            Aplica estilos a la primera letra del elemento.
+            <p class="p_first-letter">Parrafo first-letter</p>
+          </li>
+          <li>
+            <h3>::first-line</h3>
+            Aplica estilos a la primera línea del texto dentro de un elemento, Es útil para dar formato especial a los encabezados de párrafos largos.
+            <p class="p_first-line">Parrafo first-line Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, harum?</p>
+          </li>
+          <li>
+            <h3>::selection</h3>
+            Estiliza la parte del texto que se selecciona con el cursor.
+            <p class="p_selection">Selecciona este texto</p>
+          </li>
+        </ul>
+      </section>
+      <section class="pseudo otros">
+        <ul>
+          <li>
+            <h3>::placeholder</h3>
+            Aplica estilos al placeholder de un input o de un textarea.
+            <input class="input_placeholder" type="email" name="" placeholder="Correo Electronico" id="">
+          </li>
+          <li>
+            <h3>::marker</h3>
+            Este se usa para aplicar estilos a los marcadores de las listas <code>li</code>. Permite modificar las viñetas o numeración predeterminada de las listas.
+            <ul class="ul_marker">
+              <li>Ejemplo Marker</li>
+              <li>Ejemplo Marker</li>
+              <li>Ejemplo Marker</li>
+              <li>Ejemplo Marker</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
