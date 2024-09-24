@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #111;
+  margin: 0;
+  padding: 0;
+  font-family: "proxima nova";
+  color: #cfcfcf;
+  box-sizing: border-box;
+}
+
+main {
+  margin: 0 30px;
+}
+
+h1 {
+  text-align: center;
+  background-color: #48e;
+  padding: 20px 0;
+  margin: 0;
+}
+
+p {
+  font-size: 2.2rem;
+  text-align: justify;
+}
+
+h2 {
+  color: rgb(87, 154, 255);
+  background-color: transparent;
+  padding: 0;
+  text-align: center;
+}
+
+h3 {
+  margin: 10px 0;
+  color: rgb(0, 218, 0);
+}
+
+ol {
+  padding: 0;
+  margin: 0 20px;
+}
+
+li {
+  font-size: 2.1rem;
+}
+
+footer{
+  background-color: #48e;
+  font-size: 2.5rem;
+  text-align: justify;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer > a{
+  text-align: center;
+  color: rgb(0, 255, 0);
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.ejemplo {
+  background-color: red;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 40px;
+  font-weight: bold;
+  font-size: 2rem;
+  width: 100%;
+}
+
+/* ? hover */
+.hover {
+  border: 2px solid transparent;
+}
+
+.hover:hover {
+  background-color: #48e;
+  border: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+/* ? active */
+.active {
+  border: 2px solid transparent;
+}
+
+.active:active {
+  border: 2px solid rgb(255, 255, 255);
+  background-color: #48e;
+  cursor: pointer;
+}
+
+/* ? focus */
+.focus {
+  outline: none;
+  color: #fff;
+  font-weight: normal;
+  background-color: red;
+  border: 3px solid transparent;
+}
+
+.focus:focus {
+  border: 3px solid red;
+  background-color: #fff;
+  color: #111;
+}
+
+/* ? visited */
+.div_visited,
+.div_link {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.visited {
+  text-decoration: none;
+}
+
+.visited:visited {
+  color: green;
+  outline: none;
+}
+
+/* ? link */
+.nolink {
+  text-decoration: none;
+}
+
+.nolink:link {
+  color: purple;
+}
+
+/* ? first-child */
+.ul_first-child li,
+.ul_last-child li,
+.ul_nth-child li,
+.ul_nth-child-n li,
+.ul-not li {
+  padding: 5px 0;
+  margin: 5px 0;
+}
+
+.ul_first-child li:first-child {
+  color: #48e;
+}
+
+/* ? last-child */
+.ul_last-child li:last-child {
+  color: #48e;
+}
+
+/* ? nth-child(#) */
+.ul_nth-child li:nth-child(2) {
+  color: #48e;
+}
+
+.ul_nth-child-n li:nth-child(2n) {
+  color: #48e;
+}
+
+/* ? not() */
+.ul-not li:not(.li-not) {
+  color: red;
+}
+
+/* ? disabled */
+.disabled:disabled {
+  background-color: gray;
+  border: 0;
+}
+
+/* ? cheched */
+.checked:checked {
+  margin: 10px 30px;
+}

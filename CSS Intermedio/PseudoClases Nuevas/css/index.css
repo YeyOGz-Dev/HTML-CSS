@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #111;
+  margin: 0;
+  padding: 0;
+  font-family: "proxima nova";
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+main {
+  margin: 0 30px;
+}
+
+h1 {
+  text-align: center;
+  background-color: #48e;
+  padding: 20px 0;
+  margin: 0;
+}
+
+p {
+  font-size: 2.2rem;
+  /* text-align: justify; */
+}
+
+h2 {
+  color: rgb(87, 154, 255);
+  background-color: transparent;
+  padding: 0;
+  text-align: center;
+}
+
+h3 {
+  margin: 10px 0;
+  color: rgb(0, 218, 0);
+}
+
+ul {
+  padding: 0;
+  margin: 0 20px;
+}
+
+li {
+  font-size: 2.1rem;
+}
+
+/* ?  is */
+
+.div-is{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div1{
+  margin-right: 5px;
+}
+
+.div1 :is(.p1,.p2,.p3){
+  color: rgb(255, 0, 0);
+}
+
+.div2 :is(.p1,.p2,.p3){
+  color: #48e;
+}
+
+/* ? has */
+.div-has:has(img){
+  border: 3px solid #48e;
+
+}
+
+input{
+  padding: 20px;
+  font-size: 2rem;
+  outline: none;
+}
+
+.input:valid{
+  color: rgb(0, 255, 0);
+}
+
+.input:invalid{
+  color: red;
+}
+
+.label-has{
+  color: inherit;
+}
+
+.label-has:has(.input-has:valid){
+  color: #0f0;
+}
+.label-has:has(.input-has:invalid){
+  color: #f00;
+}

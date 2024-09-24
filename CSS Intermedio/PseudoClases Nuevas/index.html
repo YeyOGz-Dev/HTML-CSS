@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PseudoClases Nuevas</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="shortcut icon" href="../img/CSS.webp" type="image/x-icon" />
+  </head>
+  <body>
+    <h1>PseudoClases Nuevas</h1>
+    <main>
+      <p>
+        Las nuevas PseudoClases <code>:is(), :where(), :has()</code> son más
+        avanzadas y recientes en CSS, y están diseñadas para facilitar la
+        selección y aplicación de estilos a elementos.
+      </p>
+      <ul>
+        <li>
+          <h3>:is()</h3>
+          Esta simplifica la escritura de selectores complejos, permitiéndo
+          combinar varios selectores en uno solo sin repetir reglas de estilo.
+          <br />
+          El selector dentro de <code>:is()</code> se evalúa, y si uno de los
+          selectores coincide, se aplican los estilos. <br />
+          En mis propias palabras es que, si tenemos un div y dentro de este
+          queremos seleccionar varios p de clase p1,p2,p3 podemos darle el mismo
+          estilo a cada uno. <br />
+          Esto mas que todo sirve por si tenemos varios divs y dentro de cada
+          uno tenemos varios p, podremos seleccionar un solo div y seleccionar
+          los elementos que queremos estilizar sin tener que volver a llamar al
+          div que seleccionamos por ejemplo:
+          <div class="div-is">
+            <div class="div1">
+              <p class="p1">Elemento 1 del div1</p>
+              <p class="p2">Elemento 2 del div1</p>
+              <p class="p3">Elemento 3 del div1</p>
+            </div>
+            <div class="div2">
+              <p class="p1">Elemento 1 del div2</p>
+              <p class="p2">Elemento 2 del div2</p>
+              <p class="p3">Elemento 3 del div2</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <h3>:where()</h3>
+          Este es igual que el <code>:is()</code> La unica diferencia es que
+          este no afecta el cálculo de la especificidad para ese selector.
+          <br />
+          Es util para cuando se desea aplicar estilos de "bajo peso" que puedan
+          se fácilmente sobreescritos por otras reglas.
+        </li>
+        <li>
+          <h3>:has()</h3>
+          Esta es la mejor y la mas poderosa porque permite seleccionar un
+          elemento basado en la presencia de un descendiente o contenido
+          específico. en otras palabras, es una PseudoClase
+          <strong>padre</strong>, algo que no era posible antes en CSS. <br />
+          Es mis propias palabras, esto sirve para decir como, si un elemento
+          padre TIENE como hijo por ejemplo un p, que se le den estilos, si no
+          tiene el hijo p, entonces no tendra los estilos
+          <div class="div-has">
+            <img src="../img/CSS.webp" width="200" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestias, maiores?
+            </p>
+          </div>
+          <p>La manera mas poderosa de usar esto es mas o menos asi:</p>
+          <p>De esta manera estaremos usando los estilos como normalmente se aplicaban, es que si esta valido el <strong>input</strong> sera de color verde y si esta invalido sera de color rojo.</p>
+          <label class="label">Email
+            <input type="email" class="input">
+          </label>
+          <p>Pero si no queremos que se vea el afectado el input con estilos si no el label sera usando el has asi:
+            .label-has:has(input:valid){
+              color: #0f0;
+            }
+          </p>
+          <label class="label-has">Email
+            <input type="email" class="input-has">
+          </label>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

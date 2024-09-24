@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PseudoClases</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="shortcut icon" href="../img/CSS.webp" type="image/x-icon" />
+  </head>
+  <body>
+    <h1>PseudoClases</h1>
+    <main>
+      <p>
+        Las PseudoClases en CSS son palabras clave que se añaden a un selector
+        para especificar un estado especial del elemento seleccionado. Permiten
+        aplicar estilos basados en el estado de un elemento sin necesidad de
+        modificar el HTML.
+      </p>
+      <h2>PseudoClases mas comunes:</h2>
+      <ol>
+        <li>
+          <h3>:hover</h3>
+          Aplica estilo cuando el cursor pasa por encima del elemento.
+          <div class="ejemplo hover">Pasa el mouse por encima de mi</div>
+        </li>
+        <li>
+          <h3>:active</h3>
+          Se activa mientras el usuario este clicando el elemento.
+          <div class="ejemplo active">Click Aqui!</div>
+        </li>
+        <li>
+          <h3>:focus</h3>
+          Aplica estilo cuando un elemento esta enfocado como como los inputs
+          <input
+            type="text"
+            placeholder="Escribe texto"
+            class="ejemplo focus"
+          />
+        </li>
+        <li>
+          <h3>:visited</h3>
+          Aplica estilos a los enlaces que ya han sido visitados.
+          <div class="div_visited">
+            <a href="#" class="visited">Enlace Visitado</a>
+            <a href="../img/CSS.webp" class="novisited">Enlace NO Visitado</a>
+          </div>
+        </li>
+        <li>
+          <h3>:link</h3>
+          Aplica estilos a los enlaces que aun NO han sido visitados.
+          <div class="div_link">
+            <a href="#" class="link">Enlace Visitado</a>
+            <a href="../img/CSS.webp" class="nolink">Enlace NO Visitado</a>
+          </div>
+        </li>
+        <li>
+          <h3>:first-child</h3>
+          Selecciona el primer hijo de un elemento, por ejemplo si tenemos una
+          lista y queremos selccionar el primer list-item (li).
+          <ul class="ul_first-child">
+            <li>elemento1</li>
+            <li>elemento2</li>
+            <li>elemento3</li>
+            <li>elemento4</li>
+          </ul>
+        </li>
+        <li>
+          <h3>:last-child</h3>
+          Selecciona el ultimo hijo de un elemento, por ejemplo si tenemos una
+          lista y queremos selccionar el ultimo list-item (li).
+          <ul class="ul_last-child">
+            <li>elemento1</li>
+            <li>elemento2</li>
+            <li>elemento3</li>
+            <li>elemento4</li>
+          </ul>
+        </li>
+        <li>
+          <h3>:nth-child(#)</h3>
+          Selecciona el elemento hijo dandole el #ro de posicion, por ejemplo si
+          tenemos una ul y esta tiene 5 li, usamos ( nth-child(2) ) para
+          seleccionar el segundo elemento.
+          <ul class="ul_nth-child">
+            <li>elemento1</li>
+            <li>elemento2</li>
+            <li>elemento3</li>
+            <li>elemento4</li>
+          </ul>
+          <p>
+            Esta tiene una variación para seleccionar los elementos, usando
+            "nth-child(#n)", esta nos permite usarla como intervalos por ejemplo
+            si ponemos (2n) se selecciona el segundo de cada dos elementos, si
+            ponemos (3n) se selecciona el 3 de cada 3 elementos
+          </p>
+          <ul class="ul_nth-child-n">
+            <li>elemento1</li>
+            <li>elemento2</li>
+            <li>elemento3</li>
+            <li>elemento4</li>
+            <li>elemento5</li>
+            <li>elemento6</li>
+            <li>elemento7</li>
+            <li>elemento8</li>
+          </ul>
+        </li>
+        <li>
+          <h3>:not()</h3>
+          Aplica el estilo a los elementos que no coinciden con su selector (los
+          excluye). Esto sirve para cuando por ejemplo tenemos una lista de
+          items y queremos seleccionar los items faltantes segun la clase.
+          <ul class="ul-not">
+            <li class="li-not">Elemento 1</li>
+            <li class="li">Elemento 2</li>
+            <li class="li-not">Elemento 3</li>
+          </ul>
+        </li>
+        <li>
+          <h3>:disabled</h3>
+          Selecciona y aplica estilos a los elementos que queremos deshabilitar.
+          Este se le debe aplicar directamente al input y luego en el css llamar
+          al input + :disabled
+          <input type="text" class="ejemplo disabled" disabled />
+        </li>
+        <li>
+          <h3>:checked</h3>
+          Aplica estilos a los elementos que están seleccionados o marcados,
+          como checkboxes o radio buttons <br />
+          <input type="checkbox" name="" id="" class="checked" />
+          <input type="radio" name="" id="" class="checked" />
+        </li>
+      </ol>
+    </main>
+    <footer>
+      Hay muchas mas PseudoClases por investigar, aqui podremos verlas todas:
+      <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes"
+        >Pagina Oficial de PseudoClases</a
+      >
+    </footer>
+  </body>
+</html>
