@@ -1,0 +1,115 @@
+/*  
+
+
+p {
+  font-size: 2.2rem;
+}
+
+h2 {
+  color: rgb(87, 154, 255);
+  background-color: transparent;
+  padding: 0;
+  text-align: center;
+}
+
+h3 {
+  margin: 10px 0;
+  color: rgb(0, 218, 0);
+}
+
+ul {
+  padding: 0;
+  margin: 0 20px;
+}
+
+li {
+  font-size: 2.1rem;
+} */
+
+body{
+  background-color: var(--oscuro);
+  color: var(--claro);
+}
+
+.header__h1{
+  text-align: center;
+  background-color: #48e;
+  padding: 20px 0;
+  font-weight: bold;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.main{
+  margin: 0 30px;
+}
+
+.main__p{
+  font-size: 2.2rem;
+  margin: 15px 0;
+}
+
+.main__h2{
+  text-align: center;
+  font-size: 2.8rem;
+  color: #48e;
+}
+
+.main__ul{
+  margin: 0 20px;
+}
+
+.main__li{
+  list-style-type: square;
+  font-size: 2rem;
+  margin: 20px 0;
+
+}
+
+.main__li::marker{
+  font-size: 2.5rem;
+  color: rgb(0, 255, 0);
+}
+
+.main__h3{
+  font-size: 2.6rem;
+  margin: 10px 0;
+  color: rgb(0, 255, 0);
+}
+
+/* ? block */
+.li__div--block{
+  background-color: #48e;
+  padding: 10px;
+  font-size: 2rem;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.li__div--block2{
+  background-color: blueviolet;
+}
+
+/* ? inline */
+.li__span--inline{
+  background-color: blueviolet;
+}
+.li__span--inline2{
+  background-color: rgb(43, 70, 226);
+}
+
+/* ? inline-block */
+.liNav{
+  background-color: darkorchid;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.liNav__items{
+  display: inline-block;
+  padding: 10px 20px;
+}
+.liNav__items:hover{
+  background-color: rgb(133, 17, 241);
+  cursor: pointer;
+}

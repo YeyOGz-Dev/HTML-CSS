@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PseudoClases Nuevas</title>
+    <link rel="shortcut icon" href="../img/CSS.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="../../My-Reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__h1">Display</h1>
+    </header>
+    <main class="main">
+      <p class="main__p">
+        En CSS, la propiedad <code>display</code> define cómo un elemento HTML
+        debe comportarse en el flujo del documento y cómo se posicionan y
+        distribuyen sus contenidos. Dependiendo del valor asignado a un elemento
+        puede comportarse como un bloque, una fila en línea, un contenedor
+        flexible, una cuadrícula, entre otras...
+      </p>
+      <h2 class="main__h2">Valores comunes de display y su comportamiento.</h2>
+      <ul class="main__ul">
+        <li class="main__li li">
+          <h3 class="main__h3">display:block</h3>
+          Los elementos con <code>display:block</code> ocupan todo el ancho
+          posible, se apila uno debajo del otro, comenzando en una nueva línea.
+          Hay etiquetas que vienen con este valor por defecto.
+          <div class="li__div--block">Soy un bloque</div>
+          <div class="li__div--block li__div--block2">Otro bloque</div>
+        </li>
+        <li class="main__li li">
+          <h3 class="main__h3">display:inline</h3>
+          Un elemento con <code>display:inline</code> no comienza en una nueva
+          línea y solo ocupa el ancho necesario, es decir, el contenido.
+          Elementos como <code>span</code> o <code>a</code> son inline por defecto. Los elementos se
+          muestran en la misma línea, uno junto al otro.
+          A estos no se les puede dar dimensiones como margin ni padding ya que ocupan literalmente lo que miden.
+          <div>
+            <span class="li__span--inline">Soy inline</span>
+            <span class="li__span--inline li__span--inline2">Soy inline</span>
+          </div>
+        </li>
+        <li class="main__li li">
+          <h3 class="main__h3">display:inline-block</h3>
+          Este combina los aspectos de <code>block</code> e <code>inline</code>. Se comporta como un elemento en línea en cuanto a su disposición en la página, pero permite especificar dimensiones como a los elementos de bloque. Esta es la mejor manera para utilizar.
+          <nav class="liNav">
+            <ul>
+              <li class="liNav__items">Home</li>
+              <li class="liNav__items">About</li>
+              <li class="liNav__items">Contact</li>
+            </ul>
+          </nav>
+        </li>
+        <li class="main__li li">
+          <h3 class="main__h3">display:none</h3>
+          Elimina el elemento del flujo del documento; no se renderiza y no ocupa espacio, literalmente es como si borraramos el elemento. A diferencia de <code>visibility:hidden</code> que este hace que el elemento desaparezca pero si ocupa el espacio.
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
