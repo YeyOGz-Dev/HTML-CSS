@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Absolute</title>
+    <link rel="shortcut icon" href="../img/CSS.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="../../My-Reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__h1">position:absolute</h1>
+    </header>
+    <main class="main">
+      <p class="main__p">
+        La propiedad <code>position:absolute</code> en CSS se utiliza para
+        colocar un elemento en una posición específica dentro de su contenedor.
+        Un elemento con esta propiedad se posiciona en relación al contenedor
+        posicionado más cercano (es decir, un contenedor que tenga una propiedad
+        de position diferente a la que viene por defecto que es static.)
+      </p>
+      <div class="container">
+        <h2 class="container__h2">Características clave</h2>
+        <ul class="container__ul">
+          <li class="container__li">
+            <h3 class="container__h3">
+              Posicionamiento fuera del flujo normal:
+            </h3>
+            Los elementos con <code>position:absolute</code> se eliminan del
+            flujo normal del documento web, lo que significa que no ocupan
+            espacio en la disposición del documento. Otros elementos actúan como
+            si el elemento absoluto no estuviera allí.
+          </li>
+          <li class="container__li">
+            <h3 class="container__h3">
+              Referencia a un contenedor posicionado:
+            </h3>
+            Si no encuentra un ancestro con un valor de
+            <code>position</code> especifico, se posiciona en relación a la
+            ventana del navegador (Osea a la etiqueta html).
+          </li>
+          <li class="container__li">
+            <h3 class="container__h3">Porpiedades de posicionamiento:</h3>
+            Se pueden usar las propiedades top, right, bottom y left para
+            especificar las coordenadas exactas. Estas propiedades definen la
+            distancia del elemento con respecto a los bordes de su contenedor
+            posicionado.
+          </li>
+        </ul>
+        <h3 class="container__h3">Ejemplo</h3>
+        <div class="ejemplo">
+          Caja Relativa: contenedora de las cajas absolutas
+          <div class="ejemplo__caja ejemplo__caja1">Caja Absoluta</div>
+          <div class="ejemplo__caja ejemplo__caja2">Caja Absoluta</div>
+          <div class="ejemplo__caja ejemplo__caja3">Caja Absoluta</div>
+          <div class="ejemplo__caja ejemplo__caja4">Caja Absoluta</div>
+          <div class="ejemplo__caja ejemplo__caja5">
+            coordenadas en 0 y margin auto para centrar
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

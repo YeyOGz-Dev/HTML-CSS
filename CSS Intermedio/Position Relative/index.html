@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <link rel="shortcut icon" href="../img/CSS.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="../../My-Reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__h1">Position</h1>
+    </header>
+    <main class="main">
+      <p class="main__p">
+        La propiedad <code>position</code> en CSS permite controlar cómo se
+        posicionan los elementos dentro de un documento web. Hay varios valores
+        que se pueden asignas a position, cada uno con un comportamiento
+        diferente.
+      </p>
+      <div class="container">
+        <h2 class="container__h2">position:relative</h2>
+        <p class="container__p">
+          Esta propiedad se utiliza para desplazar un elemento desde su posición
+          original dentro del flujo del documento, sin sacarlo de dicho flujo.
+          Los elementos con esta propiedad siguen ocupando el mismo espacio en
+          el diseño, pero visualmente pueden moverse respecto a su posición
+          inicial.
+        </p>
+        <h3 class="container__h3">Características clave</h3>
+        <ul class="container__ul">
+          <li class="container__li">
+            El elemento permanece en el flujo del documento: Anque se pueda
+            mover el elemento usando las propiedades de desplazamiento (top,
+            right, bottom, left), el espacio que ocupa dentro de su contenedor
+            sigue reservado.
+          </li>
+          <li class="container__li">
+            Desplazamiento relativo a su posición original: Las propiedades de
+            desplazamiento desplazan el elemento con relación a su posición
+            inicial. No afecta a los elementos hermanos (otros elementos dentro
+            del mismo contenedor) los cuales atuarán como si el elemento NO se
+            hubiera movido.
+          </li>
+        </ul>
+        <h3 class="container__h3">Propiedades de desplazamiento:</h3>
+        <ul class="container__ul">
+          <li class="container__li">
+            <code>top</code>: Mueve el elemento hacia abajo.
+          </li>
+          <li class="container__li">
+            <code>right</code>: Mueve el elemento hacia la izquierda.
+          </li>
+          <li class="container__li">
+            <code>bottom</code>: Mueve el elemento hacia arriba.
+          </li>
+          <li class="container__li">
+            <code>left</code>: Mueve el elemento hacia la derecha.
+          </li>
+          <p class="container__p">
+            Solo se podria dar los valores <code>top</code> y
+            <code>left</code> ya que son los valores principales de
+            desplazamiento.
+          </p>
+          <li class="container__li">
+            <code>z-index</code>: Define el orden en que los elementos se apilan
+            unos sobre otros (en el eje Z). Cuanto mayor sea el valor, mas
+            "adelante" estará el elemento en comparación con los demás. <br />
+            Es recomendable ponerle un z-index al contenedor padre si se va a
+            ausar, y usarse con valores de 10 en 10.
+          </li>
+        </ul>
+        <h3 class="container__h3">Uso típico:</h3>
+        <ul class="container__ul">
+          <li class="container__li">Se usan comúnmente cuando se quiere ajustar la posición de un elemento si alterar el flujo del documento o afectar otros elementos.</li>
+          <li class="container__li">Es útil como referencia para elementos hijos con <code>position:absolute</code>, ya que el hijo se posicionará en relación a su contenedor padre con <code>position:relative</code>.</li>
+        </ul>
+      </div>
+      <h3 class="container__h3">Ejemplo</h3>
+      <div class="ejemplo">
+        <div class="ejemplo__1">
+          <div class="box box1">Caja 1</div>
+          <div class="box box2">Caja 2</div>
+          <div class="box box3">Caja 3</div>
+        </div>
+        <div class="ejemplo__2">
+          <div class="box box4">Caja 1</div>
+          <div class="box box5">Caja 2</div>
+          <div class="box box6">Caja 3</div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

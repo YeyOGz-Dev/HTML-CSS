@@ -21,6 +21,7 @@ html{
 body{
   font-size: 1.6rem;
   font-family: var(--tipografia-principal);
+  line-height: 2.5rem;
 }
 
 /* Evitamos problemas con las imagenes */
@@ -93,10 +94,9 @@ td {
 
 code{
   background-color: rgb(71, 71, 71);
-  padding: 3px;
+  padding: 0 5px;
   border-radius: 5px;
   color: #fff;
-  font-weight: bold;
 }
 
 /* Evitamos problemas con los SVG */
