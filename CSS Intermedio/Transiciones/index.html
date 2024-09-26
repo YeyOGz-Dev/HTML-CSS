@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transiciones</title>
+    <link rel="shortcut icon" href="../img/CSS.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="../../My-Reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__h1">Transiciones</h1>
+    </header>
+    <main class="main">
+      <p class="main__p">
+        Las Transiciones en CSS permiten animas los cambios en las propiedades
+        de un elemento cuando estos ocurrem, suavizando la trnasición de un
+        estado a otro. En lugar de cambiar una propiedad de manera instantánea,
+        la transición define cómo se debe interpolar el cambio a lo largo del
+        tiempo
+      </p>
+      <div class="container">
+        <h2 class="container__h2">Sintaxis básica de tansition</h2>
+        <p class="container__p">
+          <code>transition</code> es un atajo que agrupa otras propiedades
+          relacionadas con las transiciones:
+          <code
+            >transition: "property" "duration" "timing-function" "delay";</code
+          >
+        </p>
+        <ul class="container__ul">
+          <li class="container__li">
+            <code>property</code>Especifica que valor se quiere animar (por
+            ejemplo: width, background-color, color, etc). Tambien se puede usar
+            <code>all</code> para aplicar la transición a todas las propiedades
+            que cambien, pero es mas recomendable usarla por valor.
+          </li>
+          <li class="container__li">
+            <code>duration</code> El tiempo que durará la transición (por
+            ejemplo, 1s - 1 segundo.)
+          </li>
+          <li class="container__li">
+            <code>timing-function</code> Define cómo progresa la transición a lo
+            largo del tiempo. algunos valores comunes son:
+            <ul class="container__ul">
+              <li class="container__li--tf">ease: lento-rapido-lento</li>
+              <li class="container__li--tf">linear: constante</li>
+              <li class="container__li--tf">ease-in: lento-rapido</li>
+              <li class="container__li--tf">ease-out: rapido-lento</li>
+              <li class="container__li--tf">ease-in-out: ease-in + ease-out</li>
+              <li class="container__li--tf">
+                funcion cubic-bezier:
+                <a href="https://cubic-bezier.com/#.72,.13,.37,.93" target="_blank"
+                  >Click para ir a la pagina</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="container__li">
+            <code>delay</code> Un tiempo opcional que retrasa el inicio de la
+            transición.
+          </li>
+        </ul>
+        <h2 class="container__h2">Transiciones Múltiples</h2>
+        <p class="conatiner__p">
+          También es posible animar varias propiedades simultáneamente, cada una
+          con sus propios valores de duración, retardo y función de tiempo. en
+          este ejemplo <br />
+          <code
+            >transition: <br />background-color .5s ease, <br />
+            border .5s ease-in, <br />
+            color .5s ease-out, border-radius <br />
+            .5s ease-in-out;</code
+          >
+        </p>
+        <div class="ejemplo--transiciones">Caja</div>
+        <h3 class="container__h2">Consideraciones importantes</h3>
+        <ul class="container__ul">
+          <li class="container__li">
+            No todas las propiedades CSS pueden animarse. Las propiedades
+            animables son aquellas que tienen valores numéricos o de color, como
+            <code>width, height, margin, opacity, color</code> entre otras.
+          </li>
+          <li class="container__li">
+            Las transiciones no tienen efecto si el cambio de la propiedad no es
+            visible, por ejemplo, si cambias una propiedad que no afecta al
+            diseño o estilo visual del elemento, la transición no será
+            apreciable.
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
