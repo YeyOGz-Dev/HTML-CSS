@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overflow</title>
+    <link rel="shortcut icon" href="../img/CSS.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="../../My-Reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__h1">Overflow</h1>
+    </header>
+    <main class="main">
+      <p class="main__p">
+        El Overflow en CSS controla cómo se comporta el contenido cuando
+        sobrepasa elárea del contenedor. Se utiliza principalmente para definir
+        qué hacer cuando el contenido excede las dimensiones especificadas del
+        elemento.
+      </p>
+      <div class="container">
+        <h2 class="container__h2">Propiedades de Overflow</h2>
+        <ol class="container__ol">
+          <li class="container__li">
+            <code>Overflow</code>: Esta propiedad principal aplica tanto al eje
+            horizontal como al vertical. Si necesitas controlarlo de forma
+            independiente, puedes usar <code>overflow-x</code> (horizontal) y
+            <code>overflow-y</code> (vertical).
+          </li>
+          <h3 class="container__h3">Valores más comunes:</h3>
+          <ul class="container__ul">
+            <li class="container__li">
+              <code>visible</code> (Valor por defecto). El contenido desbordado
+              es visible fuera del contenedor.
+            </li>
+            <li class="container__li">
+              <code>hidden</code> El contenido que excede las dimensiones del
+              contenedor se oculta.
+            </li>
+            <li class="container__li">
+              <code>scroll</code> Siempre muestra una barra de desplazamiento,
+              incluso si no hay contenido adicional.
+            </li>
+            <li class="container__li">
+              <code>auto</code> Muestra una barra de desplazamiento solo cuando
+              es necesario, es decir, cuando el contenido sobrepasa el
+              contenedor.
+            </li>
+          </ul>
+        </ol>
+        <h3 class="container__h3">Ejemplos</h3>
+        <div class="ejemplos">
+          <div class="ejemplo__hidden ejemplo">
+            Overflow: hidden
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+              quibusdam aperiam consectetur quisquam consequatur, voluptas ea
+              sequi animi? Sapiente quidem eius, rem perspiciatis quasi eligendi
+              fuga similique blanditiis illo qui laborum. Quae sequi laudantium
+              optio maxime quas excepturi, impedit corrupti voluptates
+              accusamus, necessitatibus labore doloribus odio magnam aliquam
+              soluta omnis?
+            </p>
+          </div>
+          <div class="ejemplo__scroll ejemplo">
+            Overflow: scroll
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
+          <div class="ejemplo__auto ejemplo">
+            Overflow: auto
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+              asperiores autem aliquid ipsam ipsa, obcaecati dolorum vitae magni
+              nihil nisi fugiat quae esse, sunt facere! Nostrum nobis
+              consequatur veniam facilis magnam nesciunt cupiditate est deleniti
+              accusantium voluptates, molestias dolorem eius autem velit enim!
+              Ratione id aspernatur, dicta et deleniti repellat!
+            </p>
+          </div>
+          <div class="ejemplo__visible ejemplo">
+            Overflow: visible
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+              quibusdam aperiam consectetur quisquam consequatur, voluptas ea
+              sequi animi? Sapien
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
