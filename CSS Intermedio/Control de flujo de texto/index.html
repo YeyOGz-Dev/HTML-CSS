@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control de flujo de texto</title>
+    <link rel="shortcut icon" href="../img/CSS.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="../../My-Reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__h1">Control de flujo de texto</h1>
+    </header>
+    <main class="main">
+      <p class="main__p">
+        Las propiedades de control de flujo de texto en CSS permiten gestionar
+        cómo se presenta y comporta el texto en un contenedor. Son especialmente
+        útiles para controlar la alineación, el ajuste, el espaciado y el corte
+        de texto cuando el contenido excede el área disponible.
+      </p>
+      <div class="container">
+        <ol class="container__ol">
+          <li class="container__li">
+            <code>white-space</code>: Controla cómo se manejan los espacios en
+            blanco y las nuevas líneas en el contenido de texto.
+            <ul class="container__ul">
+              <li class="container__li">
+                <code>normal</code>:Se ignoran los saltos de línea múltiples, y
+                el texto se ajusta dentro del contenedor.
+              </li>
+              <li class="container__li">
+                <code>nowrap</code>: El texto no se ajusta, incluso si se
+                desborda.
+              </li>
+              <li class="container__li">
+                <code>pre</code>: Preserva los espacios en blanco y saltos de
+                línea que le demos en el HTML, pero se deborda.
+              </li>
+              <li class="container__li">
+                <code>pre-wrap</code>: Preserva los saltos de línea, pero el
+                texto puede ajustarse si es necesario.
+              </li>
+              <li class="container__li">
+                <code>pre-line</code>: Combina las características de normal y
+                pre; preserva los saltos de línea, pero se ignoran los espacios
+                en blanco adicionales.
+              </li>
+            </ul>
+          </li>
+          <li class="container__li">
+            <code>text-overflow</code>: Esta propiedad controla cómo se muestra
+            el texto cuando se desborda el contenedor asignado.
+            <ul class="container__ul">
+              <li class="container__li">
+                <code>clip</code>: El texto se corta bruscamente al final del
+                contenedor sin mostrar ninfuna indicación.
+              </li>
+              <li class="container__li">
+                <code>ellipsis</code>: Si el texto se desborda, se muestra un
+                "..." para indicar que hay más contenido oculto.
+              </li>
+              <li class="container__li">
+                <code>string</code>: Cualquier cadena de texto personalizada que
+                se desee mostrar al funal cuando se corte el texto.
+              </li>
+            </ul>
+          </li>
+          <li class="container__li">
+            <code>overflow-wrap</code>:Esta propiedad permite controlar cómo las
+            palabras largas se dividen o ajustan dentro de un contenedor
+            <ul class="container__ul">
+              <li class="container__li"><code>normal</code>: Las palabras no se dividirán y el contenido se desbordará si es necesario.</li>
+              <li class="container__li"><code>break-word</code>: Las palabras re romperán en múltiples líneas si exceden el ancho del contenedor.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </main>
+  </body>
+</html>

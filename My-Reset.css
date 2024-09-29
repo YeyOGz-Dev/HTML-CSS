@@ -43,9 +43,8 @@ a{
   text-decoration: none;
 }
 
-/* Quitamos los puntos de los <li> */
-li {
-  list-style-type: none;
+ul,ol{
+  padding: 0 20px;
 }
 
 /* Desactivamos estilos por defecto de las principales etiquetas de texto */
