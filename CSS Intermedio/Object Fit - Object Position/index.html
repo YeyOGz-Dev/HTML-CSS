@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Fit y Object Position</title>
+    <link rel="shortcut icon" href="../img/CSS.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="../../My-Reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__h1">Object Fit y Object Position</h1>
+    </header>
+    <main class="main">
+      <p class="main__p">
+        <code>object-fit</code> y <code>object-position</code> Son propiedades
+        de CSS que controlan cómo se ajusta un contenido multimedia dentro de un
+        contenedor. Estas propiedades son útiles cuando se trabaja con imágenes
+        o videos, especialmente cuando las dimensiones del contenido no
+        coinciden exactamente con las dimensiones del contenedor.
+      </p>
+      <div class="container">
+        <ol class="container__ol">
+          <li class="container__li">
+            <code>object-fit</code>: Especifica cómo debe ajustarse un elemento
+            "img" o "video" dentro de su contenedor, definiendo cómo se escala y
+            se recorta el contenido para que encaje.
+            <ul class="container__ul">
+              <h3 class="container__h3">Valores principales</h3>
+              <li class="container__li">
+                <code>fill</code>:(Por defecto) Hace que el contenido se ajuste
+                al tamaño del contenedor, distorsionando la imagen si es
+                necesario para que se rellene completamente.
+              </li>
+              <li class="container__li">
+                <code>contain</code>: Escala la imagen para que se ajuste dentro
+                del contenedor sin distorsión, pero dejando espacio vacío si las
+                proporciones no coinciden.
+              </li>
+              <li class="container__li">
+                <code>cover</code>: Escala la imagen para que cubra todo el
+                contenedorm manteniendo las proporciones, pero recortando las
+                partes que no encajan.
+              </li>
+              <li class="container__li">
+                <code>none</code>: La imagen no se escala no se recorta,
+                mantiene sus dimensiones originales.
+              </li>
+              <li class="container__li">
+                <code>scale-down</code>: Se comporta como none o contain, lo que
+                reduzca más la imagen (es decir, si la imagen es más pequeña que
+                el contenedor, no se escala; si es más grande, se ajusta como
+                contain).
+              </li>
+            </ul>
+            <li class="container__li">
+              La propiedad object-position define la posición del contenido dentro de su contenedor cuando se usa con object-fit (generalmente con valores como contain o cover). Por ejemplo, cuando una imagen es más pequeña que el contenedor, object-position puede usarse para alinearla en diferentes partes del contenedor (centro, izquierda, derecha, etc.).
+            </li>
+          </li>
+        </ol>
+      </div>
+    </main>
+  </body>
+</html>
