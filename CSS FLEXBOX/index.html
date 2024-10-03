@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS FLEXBOX</title>
+    <link
+      rel="shortcut icon"
+      href="../CSS Intermedio/img/CSS.webp"
+      type="image/webp"
+    />
+    <link rel="stylesheet" href="../My-Reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__h1">CSS FLEXBOX</h1>
+    </header>
+    <main class="main">
+      <p class="main__p">
+        FLEXBOX es un sistema de diseño en CSSque permite la creación de layouts
+        flexibles y adaptativos para distribuir elementos dentro de un
+        contenedor. Está diseñado para distribuir espacio dentro de un
+        contenedor y manejar la alineación , el tamaño y la distribución de los
+        elementos, incluso cuando sus tamaños no son fijos. Es especialmente
+        útil para crear diseños responsivos.
+      </p>
+      <h2 class="main__h2">Conceptos clave de FLEXBOX</h2>
+      <ol class="main__ul">
+        <li class="main__li">
+          Contenedor flexible (Flex container):
+          <p class="main__p">
+            Es el elemento padre que contiene uno o más elementos flexibles. Se
+            define como un contenedor flexible al aplicar la propiedad
+            <code>display:flex</code> o <code>display:inline-flex</code>. Cuando
+            un contenedor es flexible, todos sus hijos directos se convierten en
+            <strong>elementos flexibles (flex-items)</strong>
+          </p>
+        </li>
+        <li class="main__li">
+          Ejes en Flexbox:
+          <p class="main__p">
+            Flexbox trabaja en dos ejes principales: el eje principal (main
+            axis) y el eje cruzado (cross axis).
+          </p>
+          <ul class="main__ul">
+            <li class="main__li">
+              Main axis
+              <p class="main__p">
+                Es el eje en el que se distribuyen los elementos de manera
+                predeterminada. Por defecto, es horizontal, pero puede cambiar
+                dependiendo de la propiedad <code>flex-direction</code>
+              </p>
+            </li>
+            <li class="main__li">
+              Cross axis
+              <p class="main__p">
+                Es perpendicular al eje principal. Si el eje principal es
+                horizontal, el eje cruzado será vertical, y viceversa.
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li class="main__li">
+          Propiedades del contenedor Flexbox
+          <p class="main__p">
+            Estas propiedades afectan a cómo se comportan los elementos dentro
+            del contenedor flexible.
+          </p>
+          <ul class="main__ul">
+            <li class="main__li">flex-direction</li>
+            <li class="main__li">flex-wrap</li>
+            <li class="main__li">justify-content</li>
+            <li class="main__li">align-items</li>
+            <li class="main__li">align-content</li>
+          </ul>
+        </li>
+        <li class="main__li">
+          Propiedades de los elementos flexibles
+          <p class="main__p">
+            Estas propiedades controlan el comportamiento de los elementos
+            individuales dentro del contenedor flexible
+          </p>
+          <ul class="main__ul">
+            <li class="main__li">flex-grow</li>
+            <li class="main__li">flex-shrink</li>
+            <li class="main__li">flex-basis</li>
+            <li class="main__li">align-self</li>
+          </ul>
+        </li>
+        <li class="main__li">
+          Orden y alineación de los elementos
+          <p class="main__p">
+            Flexbox permite cambiar el orden visual de los elementos y
+            alinearlos de maneras que no serían posibles con otros métodos de
+            diseño.
+          </p>
+          <ul class="main__ul">
+            <li class="main__li">order</li>
+            <li class="main__li">align-self</li>
+          </ul>
+        </li>
+      </ol>
+    </main>
+    <section class="flex direction">
+      <h2 class="direction__h2">Flex Direction</h2>
+      <p class="direction__p">
+        <code>flex-direction</code> es una propiedad fundamental de Flexbox en
+        CSS. Su función principal es definir la dirección en la que los
+        elementos hijos de un contenedor flexible (flex-container) se alinean
+        dentro del mismo. El eje principal sobre el cual se organizan estos
+        elementos es lo que cambia con esta propiedad.
+      </p>
+      <h3 class="direction__h3">Valores de flex-direction:</h3>
+      <ol class="direction__ol">
+        <li class="direction__li--valor">
+          row (por defecto):
+          <ul class="direction__ul">
+            <li class="direction__li">
+              Los elementos se organizan en una fila, alineados horizontalmente
+              de izquierda a derecha (LTR).
+            </li>
+            <li class="direction__li">
+              El eje principal es horizontal y El eje transversal es vertical.
+            </li>
+          </ul>
+        </li>
+        <li class="direction__li--valor">
+          row-reverse:
+          <ul class="direction__ul">
+            <li class="direction__li">
+              Similar a <code>row</code>, pero los elementos se alinean de
+              derecha a izquierda.
+            </li>
+            <li class="direction__li">
+              El eje principal es horizontal pero la dirección cambia.
+            </li>
+          </ul>
+        </li>
+        <li class="direction__li--valor">
+          column:
+          <ul class="direction__ul">
+            <li class="direction__li">
+              Los elementos se organizan en una columna, alineados verticalmente
+              de arriba hacia abajo.
+            </li>
+            <li class="direction__li">
+              El eje principal es vertical, y el eje transversal es horizontal.
+            </li>
+          </ul>
+        </li>
+        <li class="direction__li--valor">
+          column-reverse:
+          <ul class="direction__ul">
+            <li class="direction__li">
+              Similar a <code>column</code>, pero los elementos se alinean de
+              abajo hacia arriba.
+            </li>
+            <li class="direction__li">
+              El eje principal sigue siendo vertical, pero en dirección inversa.
+            </li>
+          </ul>
+        </li>
+      </ol>
+      <p class="direction__p">
+        En este ejemplo usaremos el <code>column-reverse</code>
+      </p>
+      <div class="direction__ejemplo">
+        <div class="direction__div">1</div>
+        <div class="direction__div">2</div>
+        <div class="direction__div">3</div>
+        <div class="direction__div">4</div>
+      </div>
+    </section>
+    <section class="flex wrap">
+      <h2 class="wrap__h2">Flex Wrap</h2>
+      <p class="wrap__p">
+        <code>flex-wrap</code> es una propiedad de flexbox que controla si los
+        elementos hijos dentro de un contenedor flexible deben mantenerse en una
+        sola línea o pueden "envolverse" (hacer wrap) en varias líneas cuando no
+        hay suficiente espacio en el contenedor. <br />
+        Por defecto, los elementos en un contenedor flexible se colocan en una
+        sola línea, incluso si esto significa que se reducirán o se comprimirán
+        para ajustarse al tamaño del contenedor. <code>flex-wrap</code> permite
+        cambiar este comportamiento.
+      </p>
+      <h3 class="wrap__h3">Valores de flex-wrap</h3>
+      <ol class="wrap__ol">
+        <li class="wrap__li">
+          nowrap (por defecto):
+          <ul class="wrap__ul">
+            <li class="wrap__li">
+              Los elementos se mantienen en una sola línea, sin importar si hay
+              suficiente espacio disponible en el contenedor.
+            </li>
+            <li class="wrap__li">
+              Los elementos pueden reducirse en tamaño o sobrepasar el
+              contenedor si es necesario.
+            </li>
+          </ul>
+        </li>
+        <li class="wrap__li">
+          wrap
+          <ul class="wrap__ul">
+            <li class="wrap__li">
+              Los elementos puede "envolverse" a una nueva lína si no hay
+              suficiente espacio en la línea actual.
+            </li>
+            <li class="wrap__li">
+              Los elementos adicionales se colocan en una nueva línea (o columna
+              si la dirección es vertical).
+            </li>
+          </ul>
+        </li>
+        <li class="wrap__li">
+          wrap-reverse
+          <ul class="wrap__ul">
+            <li class="wrap__li">
+              Similar a wrap, pero los elementos se envuelven en la dirección
+              inversa.
+            </li>
+            <li class="wrap__li">
+              En lugar de colocar las nuevas líneas debajo de la primera, se
+              colocan por encima (en el caso de una disposición en filas), o a
+              la izquierda (en el caso de una disposición en columnas).
+            </li>
+          </ul>
+        </li>
+      </ol>
+      <p class="wrap__p">
+        En este ejemplo usaremos el <code>flex-wrap</code> (ampliar o disminuir
+        el ancho de la pagina).
+      </p>
+      <div class="wrap__ejemplo">
+        <div class="wrap__div">1</div>
+        <div class="wrap__div">2</div>
+        <div class="wrap__div">3</div>
+        <div class="wrap__div">4</div>
+      </div>
+    </section>
+    <section class="flex flow">
+      <h2 class="flow__h2">Flex Flow</h2>
+      <p class="flow__p">
+        Basicamente <code>flew-flow</code> es el shorthand que abreviación de
+        <code>flex-direction</code> y <code>flex-wrap</code>. El primer valor
+        corresponde a flex-direction (la dirección de los elementos), y el
+        segundo valor corresponde a flex-wrap (si los elementos se envuelven o
+        no).
+      </p>
+      <p class="flow__p">
+        En este ejemplo usaremos el <code>row-reverse wrap</code>
+      </p>
+      <div class="flow__ejemplo">
+        <div class="flow__div">1</div>
+        <div class="flow__div">2</div>
+        <div class="flow__div">3</div>
+        <div class="flow__div">4</div>
+      </div>
+    </section>
+    <section class="flex justi">
+      <h2 class="justi__h2">Justify Content</h2>
+      <p class="justi__p">
+        Para controlar la alineción y distribucion a lo largo del eje principal,
+        se utiliza la propiedad <code>justify-content</code>. Esta propiedad
+        afecta cómo los elementos dentro del contenedor se distribuyen
+        horizontal o verticalmente, dependiendo de la dirección del contenedor.
+      </p>
+      <h3 class="justi__h3">Valores de justify-content</h3>
+      <ol class="justi__ol">
+        <li class="justi__li">
+          start (por defecto):
+          <p class="justi__p">
+            Alinea los elementos al principio del eje principal.
+          </p>
+        </li>
+        <li class="justi__li">
+          end:
+          <p class="justi__p">
+            Alinea los elementos al final del eje principal.
+          </p>
+        </li>
+        <li class="justi__li">
+          center:
+          <p class="justi__p">
+            Los elementos se centran a lo largo del eje principal.
+          </p>
+        </li>
+        <li class="justi__li">
+          space-between:
+          <p class="justi__p">
+            Distribuye los elementos uniformemente con el primer elemento
+            alineado al principio y el último alineado al final.
+          </p>
+        </li>
+        <li class="justi__li">
+          space-around:
+          <p class="justi__p">
+            Los elementos tienen un espacio igual alrededor de ellos (el espacio
+            entre los elementos es más grande que el espacio de en los
+            extremos).
+          </p>
+        </li>
+        <li class="justi__li">
+          space-evenly:
+          <p class="justi__p">
+            Distribuye los elementos con espacios iguales entre ellos y en los
+            extremos.
+          </p>
+        </li>
+      </ol>
+      <p class="justi__p">
+        En este ejemplo usaremos el <code>space-evenly</code>
+      </p>
+      <div class="justi__ejemplo">
+        <div class="justi__div">1</div>
+        <div class="justi__div">2</div>
+        <div class="justi__div">3</div>
+        <div class="justi__div">4</div>
+      </div>
+    </section>
+    <section class="flex align">
+      <h2 class="align__h2">Align Items</h2>
+      <p class="align__p">
+        Alinea los elementos a lo largo del eje transversal, que es
+        perpendicular al eje principal. Afecta al posicionamiento de los
+        elementos en una sola línea flexible.
+      </p>
+      <h3 class="align__h3">Valores de align-items</h3>
+      <ol class="align__ol">
+        <li class="align__li">
+          stretch (por defecto):
+          <p class="align__p">
+            Los elementos se estiran para llenar el contenedor a lo largo del
+            eje transversal (si no tienen un tamaño fijo).
+          </p>
+        </li>
+        <li class="align__li">
+          start:
+          <p class="align__p">
+            Alinea los elementos al principio del eje transversal.
+          </p>
+        </li>
+        <li class="align__li">
+          end:
+          <p class="align__p">
+            Alinea los elementos al final del eje transversal.
+          </p>
+        </li>
+        <li class="align__li">
+          center:
+          <p class="align__p">
+            Los elementos se centran a lo largo del eje transversal.
+          </p>
+        </li>
+        <li class="align__li">
+          baseline:
+          <p class="align__p">
+            Alinea los elementos a lo largo de sus líneas de base tipográfica
+            (donde comienza el texto).
+          </p>
+        </li>
+      </ol>
+      <p class="align__p">
+        En este ejemplo usaremos el <code>center</code>. (Los elementos se
+        centran en lo largo del contenedor padre) (Este ejemplo tambien tiene la
+        propiedad <code>justify-content:center</code> )
+      </p>
+      <div class="align__ejemplo">
+        <div class="align__div">1</div>
+        <div class="align__div">2</div>
+        <div class="align__div">3</div>
+        <div class="align__div">4</div>
+      </div>
+    </section>
+    <section class="flex align-content">
+      <h2 class="align-content__h2">Align Content</h2>
+      <p class="align-content__p">
+        Esta propiedad se utiliza cuando los elementos están envueltos en varias
+        líneas (cuando <code>flex-wrap</code> esta activado). Basicamente es lo
+        mismo que el <code>align-items</code> solo que esta propiedad se utiliza
+        cuando hay mas de 1 linea de elementos hijos. Controla cómo se
+        distribuyen las líneas dentro del contenedor.
+      </p>
+      <h3 class="align-content__h3">Valores de align-content</h3>
+      <ol class="align-content__ol">
+        <li class="align__li">
+          start:
+          <p class="align-content__p">
+            Las líneas se alinean al principio del eje transversal.
+          </p>
+        </li>
+        <li class="align-content__li">
+          end:
+          <p class="align-content__p">
+            Las líneas se alinean al final del eje transversal.
+          </p>
+        </li>
+        <li class="align-content__li">
+          center:
+          <p class="align-content__p">
+            Las líneas se alinean a lo largo del eje transversal.
+          </p>
+        </li>
+        <li class="align-content__li">
+          space-between:
+          <p class="align-content__p">
+            Las líneas se distribuyen uniformemente con la primera línea al
+            principio y la última al final.
+          </p>
+        </li>
+        <li class="align-content__li">
+          space-around:
+          <p class="align-content__p">
+            Las líneas tienen un espacio igual alrededor de ellas.
+          </p>
+        </li>
+        <li class="align-content__li">
+          space-evenly:
+          <p class="align-content__p">
+            Las líneas están igualmente espaciadas, incluyendo los extremos.
+          </p>
+        </li>
+        <li class="align-content__li">
+          stretch:
+          <p class="align-content__p">
+            Las líneas se estiran para llenar todo el contenedor.
+          </p>
+        </li>
+      </ol>
+      <p class="align-content__p">
+        En este ejemplo usaremos el <code>space-between</code>.(Este ejemplo
+        tambien tiene la propiedad <code>justify-content:center</code> )
+      </p>
+      <div class="align-content__ejemplo">
+        <div class="align-content__div">1</div>
+        <div class="align-content__div">2</div>
+        <div class="align-content__div">3</div>
+        <div class="align-content__div">4</div>
+      </div>
+    </section>
+    <section class="flex grow">
+      <h2 class="grow__h2">Flex Grow</h2>
+      <p class="grow__p">
+        La propiedad <code>flex-grow</code> define la capacidad de un elemento
+        para crecer y ocupar el espacio disponible en el contenedor, en
+        proporción a los demás elementos.
+      </p>
+      <ul>
+        <li>
+          Valor:
+          <p>un número positivo, generalmente un número entero o decimal</p>
+        </li>
+        <li>
+          Por defecto: 0
+          <p>El elemento no crece.</p>
+        </li>
+        <p>
+          Si un elemento tiene un valor de <code>flex-grow</code> mayor que los
+          otros, ocupará más espacio del contenedor.
+        </p>
+      </ul>
+      <p>
+        En este ejemplo el contenedor 1 tendra flex-grow :1; el 2 tendra grow:2
+        y asi sucesivamente.
+      </p>
+      <div class="grow__ejemplo">
+        <div class="grow__div grow__div--1">1</div>
+        <div class="grow__div grow__div--2">2</div>
+        <div class="grow__div grow__div--3">3</div>
+        <div class="grow__div grow__div--4">4</div>
+      </div>
+    </section>
+    <section class="flex grow">
+      <h2>Flex Shrink</h2>
+      <p>
+        La propiedad <code>flex-shrink</code> controla la capacidad de un
+        elemento para encogerse si el tamaño del contenedor es más pequeño que
+        la suma de los tamaños de todos lo elementos.
+      </p>
+      <ul>
+        <li>
+          Valor:
+          <p>
+            un número positivo (o 0 para que no se encoja), generalmente un
+            número entero o decimal
+          </p>
+        </li>
+        <li>
+          Por defecto: 1
+          <p>El elemento se encoje si es necesario.</p>
+        </li>
+        <p>
+          si varios elementos tienen diferentes valores de
+          <code>flex-shrink</code>, aquellos con un valor más alto se encogerán
+          más en proporción cuando el espacio sea limitado.
+        </p>
+      </ul>
+      <p>
+        En este ejemplo el div 1 tendra shrink:1, el div 2 tendra shrink:2 y asi
+        sucesivamente.
+      </p>
+      <div class="shrink__ejemplo">
+        <div class="shrink__div shrink__div--1">1</div>
+        <div class="shrink__div shrink__div--2">2</div>
+        <div class="shrink__div shrink__div--3">3</div>
+        <div class="shrink__div shrink__div--4">4</div>
+      </div>
+    </section>
+    <section class="flex basis">
+      <h2>Flex Basis</h2>
+      <p>
+        La propiedad <code>flex-basis</code> especifica el tamaño base de un
+        elemento antes de que se aplique <code>flex-grow</code> o
+        <code>flex-shrink</code>. Define el tamaño inicial del elemento a lo
+        largo del eje principal antes de considerar cómo crecer o encogerse
+        según el espacio disponible.
+      </p>
+      <ul>
+        <li>
+          Valor:
+          <p>
+            Una longitud (en px, em, rem, %, etc) o <code>auto</code> que es el
+            valor por defecto.
+          </p>
+        </li>
+        <li>
+          Si se define <code>flex-basis</code>, este valor tendrá prioridad
+          sobre <code>width</code> o <code>heigth</code> a lo largo del eje
+          principal.
+        </li>
+
+      </ul>
+      <p>
+        En este ejemplo el div 1 tendra shrink:1, el div 2 tendra shrink:2 y asi
+        sucesivamente.
+      </p>
+      <div class="basis__ejemplo">
+        <div class="basis__div basis__div--1">1</div>
+        <div class="basis__div basis__div--2">2</div>
+        <div class="basis__div basis__div--3">3</div>
+        <div class="basis__div basis__div--4">4</div>
+      </div>
+    </section>
+    <section class="flex basis">
+      <h2>Align Self</h2>
+      <p>
+        La propiedad <code>flex-basis</code> especifica el tamaño base de un
+        elemento antes de que se aplique <code>flex-grow</code> o
+        <code>flex-shrink</code>. Define el tamaño inicial del elemento a lo
+        largo del eje principal antes de considerar cómo crecer o encogerse
+        según el espacio disponible.
+      </p>
+      <ul>
+        <li>
+          Valor:
+          <p>
+            Una longitud (en px, em, rem, %, etc) o <code>auto</code> que es el
+            valor por defecto.
+          </p>
+        </li>
+        <li>
+          Si se define <code>flex-basis</code>, este valor tendrá prioridad
+          sobre <code>width</code> o <code>heigth</code> a lo largo del eje
+          principal.
+        </li>
+
+      </ul>
+      <p>
+        En este ejemplo el div 1 tendra shrink:1, el div 2 tendra shrink:2 y asi
+        sucesivamente.
+      </p>
+      <div class="basis__ejemplo">
+        <div class="basis__div basis__div--1">1</div>
+        <div class="basis__div basis__div--2">2</div>
+        <div class="basis__div basis__div--3">3</div>
+        <div class="basis__div basis__div--4">4</div>
+      </div>
+    </section>
+  </body>
+</html>
